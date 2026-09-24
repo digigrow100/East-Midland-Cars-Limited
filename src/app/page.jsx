@@ -2,6 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import heroImage from "@/assets/images/metallic_blue_coupe_in_a_modern_showroom.webp";
+import peugeot3008Image from "@/assets/images/copper_metallic_suv_at_dealership.webp";
+import mercedesAClassImage from "@/assets/images/red_luxury_hatchback_in_modern_showroom.webp";
+import bmw2SeriesImage from "@/assets/images/sleek_black_convertible_showroom_display.webp";
+import bmw1SeriesImage from "@/assets/images/glossy_black_hatchback_at_dealership.webp";
+import audiTTImage from "@/assets/images/sleek_black_coupe_at_the_dealership.webp";
+import hondaCivicImage from "@/assets/images/silver_hatchback_at_the_dealership.webp";
 
 export const metadata = {
   title: "East Midland Cars Limited | Quality Used Cars Leicester",
@@ -22,7 +29,7 @@ const CARS = [
     specs: ["47,000 Miles", "Automatic", "Pan Roof", "180° Camera"],
     desc: "Panoramic opening glass roof, blue interior ambient lighting, Safety Plus Pack, blind spot monitoring, full valet.",
     monthly: "£249 / month PCP",
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1Ubd3kNfkVLWoszr5q3Ekx5fY6SNaecJo38mt4PhYVZjGV726IYwbNmzE164kel5lxGn5ztDUJgA0UyvOMQio5Is26NR5_Td_5wt9Fo_ncD2vyyd7eEZKAFkGbx1MDuSEXydL_xTWwy8SX6NhqbyA-xH6xqjQc6RizkR3mat9s60VjASnv6ZcaDokDh1GvpkeP0S_Epuc3nWeRzkZpGoCWMXMBObFHhY0P-N0PpTN7a0A",
+    img: peugeot3008Image,
     alt: "Peugeot 3008 GT Line Premium SUV parked on the East Midland Cars Leicester forecourt",
   },
   {
@@ -37,7 +44,7 @@ const CARS = [
     specs: ["61,000 Miles", "Auto 7G-DCT", "Heated Seats", "Reverse Camera"],
     desc: "Freshly serviced, dual-zone Thermotronic climate control, parking assistance with guidelines, 2 keys included.",
     monthly: "£224 / month HP",
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1XSouKrLenEUrrXZ_FG7U7VXoptomHzXTmnKTKhZI2ZPMKolyLbTAknJS-Ra1NaBq52N38-ZRzwvSONgRSnJ4xFMfA1pSOOjD-DAzx7m-50nWMe2bJapjT2ayUk-ImPQAhuysMjSpXk7twBEGRcHmeCCuLScBpnJzQiqLuAV42sWIXPwIIbme87OAk9wVRqW8-N-TLMXd0Jo2aq9DDAWjLiW5_BsWAH9TkYyLHR1bZkCA",
+    img: mercedesAClassImage,
     alt: "Mercedes-Benz A-Class A220d AMG Line Premium hatchback on display in Leicester",
   },
   {
@@ -52,7 +59,7 @@ const CARS = [
     specs: ["58,070 Miles", "Diesel Auto", "Black Dakota Leather", "Heated Steering"],
     desc: "Harman Kardon premium audio, heated front seats, satellite navigation, cruise control, 2 remote keys.",
     monthly: "£215 / month PCP",
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1UI9KeF5-UUMpVVF-mq6T64epoo2qevVVbpYdrCm63I0GxY0vEx0RlN3JozjOnOFVHsQD9NVsvSSiDpeSl2mHUBiINSicyvm_WoISuPT5_Sm1vK5W6Vp3lvNacsdBo36wjT22mX7tpI-jdJrM8o9vNpZeeb7GbGlGwshMfvDh5vQ9HNzidftrVrTZ_u4EM07h9qVkxisK_AVhQ207GMBCl8p60k6qheVdZN-e9_HHiqQg",
+    img: bmw2SeriesImage,
     alt: "BMW 2 Series 225d M Sport convertible outside East Midland Cars Leicester",
   },
   {
@@ -67,7 +74,7 @@ const CARS = [
     specs: ["35,050 Miles", "Petrol Manual", "Parking Sensors", "Cruise Control"],
     desc: "Single-zone climate control, automatic rain sensing wipers, Bluetooth hands-free audio USB, pristine interior condition.",
     monthly: "£215 / month HP",
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1XIP1kxMPfoe0eGlxJdXrH3fc7qmz6vYyrXjcsLMY_wv_t-Nd5zofltT0b_YIWHTdhigarv0Mj_uDyO8MShVUCg86_yoad9iAWiT3gxZv7OlymFXjB7_vBWPweyp1Pjh-joP1zIk_XWhk8cHqcEc787lNg_x3hgmmmcf849MtEGaOg2yOuxTTCrTyEqfTSyQa7fYuLYc4AFT5m2hYM5mLQ9gjy7YBGC--AdUBaVg-fjPg",
+    img: bmw1SeriesImage,
     alt: "BMW 1 Series 118i Sport hatchback for sale in Leicester",
   },
   {
@@ -82,7 +89,7 @@ const CARS = [
     specs: ["78,000 Miles", "S Tronic Auto", "Heated Seats", "Fresh Gearbox Service"],
     desc: "Freshly serviced transmission & engine, heated sports leather, BOSE surround audio, electronic rear spoiler.",
     monthly: "£165 / month PCP",
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1XUvF5h28rzi__4l73svhrYps1jMAKBNzBeHshCA0xirPYKX3xPgHYfnAsyLo58n0Wi-rr-JWjrXe4avAYF0fiBAE2NXQeqtxj3gdn9_TX-7IYZSnx1NaXdbN5haxiIYTD8V_9Zq1_nb0k09h0H5d06Cj1k_j8o3C9Yqv7lEZZP_Ui0GFYVUuvJj6HpRaPlnJt9ycSG70sfaCV0ZPtFRR1V9gHPxl1pog2M17IUQpsOVQ",
+    img: audiTTImage,
     alt: "Audi TT Black Edition Coupe for sale at East Midland Cars Leicester",
   },
   {
@@ -97,7 +104,7 @@ const CARS = [
     specs: ["18,732 Miles (Rare)", "Petrol", "Bluetooth Audio", "Magic Seats"],
     desc: "Unbelievable low mileage, passed clear vehicle history check, 3-month comprehensive warranty, economical running costs.",
     monthly: "£185 / month HP",
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1VZxNBKgYKZLKnSVMNfQ0AN451innWFJQIxI7WOFBQTSbnj8o6QcJkXZTnO8TfnVE9H-0b-772duGC7WwMKO6RJJ-DD7Y1pt9lhU9Ef7WoJ2G0ynTwlv1BF1-frSA9JcJR0qE5fzllr5jUqZVjxzMvoxcE8VXo5-LzpO-phi-4301UplTk-F6zMIXzGpYCkCKByZhfHv4l93_-pwbxMNZH3WRHR2ZaqIBD5cVMmNX5n",
+    img: hondaCivicImage,
     alt: "Honda Civic i-VTEC S hatchback with low mileage for sale in Leicester",
   },
 ];
@@ -213,7 +220,7 @@ export default function Home() {
                 <div className="lg:col-span-5 relative">
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-inverse-surface group">
                     <Image
-                      src="https://lh3.googleusercontent.com/aida/AEtjO1UA-ikcBUb2w8jC4vudvqpjDLOg8_PWVKD5f-KzKzTK5xQ-MXCjAE8Xm8kgvMfOApTmdWbR3-wKnqPnogeivsaoYFvOOXsV5UeB9iI4QrPutcUVlilhN-7te55da0YYspUCBcSnnYzBJb_UJAnTMw3OxBcR3npTl8wJSevSyeoiIutyPGKcTIpEuPijBo6jKVc4SpZ_yP5E5g8VBoYx6uoHBgmN422Pp6o9_OUc1dBf2g"
+                      src={heroImage}
                       alt="East Midland Cars performance showcase Audi RS/S-Line Quattro coupe"
                       width={640}
                       height={440}
