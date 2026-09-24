@@ -239,18 +239,33 @@ export default function Footer() {
               <Link className="hover:text-on-primary transition-colors" href="/initial-disclosure-document">
                 Initial Disclosure Document
               </Link>
-              <Link className="hover:text-on-primary transition-colors" href="/complaints">
+              <a
+                className="hover:text-on-primary transition-colors"
+                href="https://www.finset.co.uk/complaints"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Complaints
-              </Link>
+              </a>
               <a className="hover:text-on-primary transition-colors" href="#">
                 Privacy Policy
               </a>
-              <a className="hover:text-on-primary transition-colors" href="#">
+              <a
+                className="hover:text-on-primary transition-colors"
+                href="https://www.finset.co.uk/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Finset Privacy Policy
               </a>
-              <Link className="hover:text-on-primary transition-colors" href="/finance-calculator#commission-disclosure">
+              <a
+                className="hover:text-on-primary transition-colors"
+                href="https://www.finset.co.uk/commission-disclosure-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Commission Disclosure
-              </Link>
+              </a>
               <a
                 className="hover:text-on-primary transition-colors"
                 href="https://register.fca.org.uk/s/"
@@ -258,6 +273,22 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 FCA Register
+              </a>
+              <a
+                className="hover:text-on-primary transition-colors"
+                href="https://www.financial-ombudsman.org.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Financial Ombudsman Service
+              </a>
+              <a
+                className="hover:text-on-primary transition-colors"
+                href="https://www.finset.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Finset Limited
               </a>
               <a className="hover:text-on-primary transition-colors" href="#">
                 Terms of Business
