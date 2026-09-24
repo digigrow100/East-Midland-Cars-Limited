@@ -6,7 +6,7 @@ export default function PlaceholderPage({ title }) {
   return (
     <>
       <Header />
-      <main className="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]">
+      <main className="w-full pt-[80px] bg-surface min-h-[calc(100vh-80px)]">
         <section className="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop py-space-2xl flex flex-col items-center text-center gap-space-md min-h-[50vh] justify-center">
           <h1 className="font-headline-xl text-headline-xl text-on-surface tracking-tight">{title}</h1>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">

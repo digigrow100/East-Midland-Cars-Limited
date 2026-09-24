@@ -23,47 +23,6 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-      {/* Top slim utility bar */}
-      <div className="bg-primary-container text-on-primary">
-        <div className="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop h-10 flex items-center justify-between font-body-sm text-body-sm">
-          <div className="flex items-center gap-space-md overflow-x-auto py-1">
-            <a
-              className="flex items-center gap-space-xs text-inverse-on-surface hover:text-secondary-fixed transition-colors whitespace-nowrap"
-              href="https://maps.google.com/?q=Unit+38+Oswin+Road+Leicester+LE3+1HR"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="material-symbols-outlined text-[16px]">location_on</span>
-              <span>Unit 38 Oswin Road, Leicester, LE3 1HR</span>
-            </a>
-            <span className="hidden xl:inline text-outline">|</span>
-            <a
-              className="hidden md:flex items-center gap-space-xs text-inverse-on-surface hover:text-secondary-fixed transition-colors whitespace-nowrap"
-              href="tel:01162898888"
-            >
-              <span className="material-symbols-outlined text-[16px]">call</span>
-              <span>0116 289 8888 / 07475 248063</span>
-            </a>
-            <span className="hidden xl:inline text-outline">|</span>
-            <a
-              className="hidden lg:flex items-center gap-space-xs text-inverse-on-surface hover:text-secondary-fixed transition-colors whitespace-nowrap"
-              href="mailto:sales@eastmidlandcars.co.uk"
-            >
-              <span className="material-symbols-outlined text-[16px]">mail</span>
-              <span>sales@eastmidlandcars.co.uk</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-space-md whitespace-nowrap font-label-sm text-label-sm text-inverse-on-surface">
-            <div className="flex items-center gap-space-xs">
-              <span className="material-symbols-outlined text-[16px] text-secondary-container">
-                schedule
-              </span>
-              <span>Mon-Sat 09:00-18:00 | Sun 10:00-17:00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main bar */}
       <div className="h-20 max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-md">
