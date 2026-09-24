@@ -23,6 +23,7 @@ Guidance for making content changes to this Next.js site.
 - Prefer `.webp` format.
 - Always include meaningful `alt` text.
 - Always define `width` and `height`.
+- A remote placeholder image (such as the current `lh3.googleusercontent.com` stock photos used until real vehicle photography is supplied) is still rendered via `next/image` with explicit `width`/`height`/`alt` exactly as required, pending real photography being added under `src/assets/images/`.
 
 ## Editing rules
 
