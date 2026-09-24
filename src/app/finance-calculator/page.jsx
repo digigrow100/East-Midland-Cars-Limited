@@ -420,7 +420,9 @@ export default function FinanceCalculatorPage() {
                   </div>
                   <div className="pt-space-md">
                     <a
-                      href="mailto:compliance@finset.co.uk"
+                      href="https://www.finset.co.uk/commission-disclosure-policy"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-space-xs px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-sm"
                     >
                       <span>View Finset&apos;s Full Commission Disclosure</span>
