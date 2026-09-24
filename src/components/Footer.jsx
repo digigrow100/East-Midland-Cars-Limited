@@ -61,7 +61,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
           <div className="space-y-space-sm">
             <div className="inline-flex items-center bg-surface-container-lowest rounded-lg px-3 py-2">
-              <Image src={logo} alt="East Midland Cars Limited" className="h-7 w-auto" />
+              <Image src={logo} alt="East Midland Cars Limited" className="h-9 w-auto" />
             </div>
             <p className="font-body-sm text-body-sm text-primary-fixed-dim pt-space-xs">
               A prestigious quality used car dealership based in Leicester,
