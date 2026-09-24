@@ -4,6 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ReviewsGrid from "@/components/ReviewsGrid";
 import ReviewForm from "@/components/ReviewForm";
+import handoverAudiTTImage from "@/assets/images/celebrating_their_new_sports_coupe.webp";
+import handoverMercedesImage from "@/assets/images/golden_hour_dealership_confidence.webp";
+import handoverBmwImage from "@/assets/images/friends_celebrate_with_a_blue_convertible.webp";
 
 export const metadata = {
   title: "Customer Reviews | East Midland Cars Limited",
@@ -20,7 +23,7 @@ const HANDOVERS = [
     badge: "Handover Verified",
     corner: "Key Presentation",
     cornerIcon: "key",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuACWR7CItluxA7hzaFKD2vgTflfz0vuhUa85frIjHfI_TLy2wyIkQ9wPzxIwxgvSwqhEBGcLJPCmMBljG4hAX6z6uZs8zKUj2rX1h54jETyLJSnUEpa0G7zm06NsKkiYb0wuQ3EAcJWPJmulrnfEaIFG0XqcZyGHuycJp4twP8SuJYgxIufxxEao-rRftn7Nx4P7oEG194BdvPTHJXjHqRpj5Gp599hSVdxR1ZwmP3eWuriDnWv_S5tGw",
+    img: handoverAudiTTImage,
     alt: "A proud young British couple in front of a metallic grey Audi TT coupe outside East Midland Cars showroom, holding the keys",
   },
   {
@@ -31,7 +34,7 @@ const HANDOVERS = [
     badge: "Handover Verified",
     corner: "Same-Day Finance",
     cornerIcon: "credit_score",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAw6OyQAzy3CpjFeXpjsZbjdJSMpLe0BcqRrEk7Rtl5Blen44-fPIe-W46v_-0Xuf_5CCDWdK9aiFocMCbGzRsGyS4DyL9QTDBu08nr4NBB_geexSGKwD_4SzKrfzmyD-XWqwpbPUL918olRJbYY4Rh8Spx6iJ10IzBKw-diI1cjDvM5Eu-qE9YURBEdyKT93cFX4gh9kx0dWJ9E94P3r0lZkM32EYhStq2qAC_sH0v5naoBG72TlSKcg",
+    img: handoverMercedesImage,
     alt: "A professional woman smiling next to an immaculate white Mercedes-Benz A-Class hatchback on the East Midland Cars forecourt",
   },
   {
@@ -42,7 +45,7 @@ const HANDOVERS = [
     badge: "Nationwide Delivery",
     corner: "Doorstep Arrival",
     cornerIcon: "local_shipping",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCGxe3RnfMZElGVuLREgCohCDSQOxgflpLmwfegkSZhKIb4VC3CxLwmzGjlqDKgV-trVqRsHQTfDqPVSWhIR9sKjgGD86Ml6XoWHQaBkU2px70dNA6-H6502jr9wxlNF7SLPHkkldwfdhjHYd7uCeJzxoATAytVFvAWNyoKuKbOwlTkMJt8B1gkmT__Vf5nnBw1n7x3Q1ACrrina7MZsuslACLE2aMmXdSKqED9_zPg1ra0CW16h35ghQ",
+    img: handoverBmwImage,
     alt: "Two cheerful friends next to a sporty blue BMW 2 Series Convertible with the roof down in a Coventry driveway",
   },
 ];

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CoverageExplorer from "@/components/CoverageExplorer";
+import heroImage from "@/assets/images/luxury_sedan_in_modern_auto_workshop.webp";
 
 export const metadata = {
   title: "Warranty & RAC | East Midland Cars Limited",
@@ -352,7 +353,7 @@ export default function WarrantyRacPage() {
                 <div className="lg:col-span-7 flex flex-col gap-space-lg">
                   <div className="relative rounded-xl overflow-hidden shadow-lg h-80 w-full">
                     <Image
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeXk73z0GWHp23Qz5kGNwC40zEAk2BK8LsccXOTK0nLe_ArLOvfzJsGxrXQA2uDgOnLbx7sH2jmE-vg0Ha8b4tQt9dhIxlDipCKbqfVvlth0tg32gpZQunZqU0KBMeQRo-ZBDJQBW-sABTqLpxXv2aKDMCZBd-Xgklg2rfhSUiPuBOX2DNbrcoef3HK4bDYjEWQHx3DSe_Jo8J1RR_19E1nl44hHx0vmBLrB2TjH1AKM55mxzyHIlcbw"
+                      src={heroImage}
                       alt="A clean modern British automotive workshop showing certified technicians inspecting a premium executive car on a hydraulic lift"
                       fill
                       className="object-cover"

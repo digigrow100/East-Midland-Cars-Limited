@@ -2,6 +2,12 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
+import peugeot3008Image from "@/assets/images/copper_metallic_suv_at_dealership.webp";
+import mercedesAClassImage from "@/assets/images/red_luxury_hatchback_in_modern_showroom.webp";
+import bmw2SeriesImage from "@/assets/images/sleek_black_convertible_showroom_display.webp";
+import bmw1SeriesImage from "@/assets/images/glossy_black_hatchback_at_dealership.webp";
+import audiTTImage from "@/assets/images/sleek_black_coupe_at_the_dealership.webp";
+import hondaCivicImage from "@/assets/images/silver_hatchback_at_the_dealership.webp";
 
 const BODY_TYPES = [
   { value: "all", label: "All Bodies", count: 45 },
@@ -41,7 +47,7 @@ const CARS = [
     fuel: "Petrol",
     photos: 28,
     badges: ["Just Arrived", "1 Owner"],
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDF8i9VbzR9cogDLjjsbVT1uZz7rck54s2VRRLCJOFnF3PeVy2m-Gac0HqQ3R-2UI3EuGuj6cO0qofTs0MtytV5Dk-PGIe8aGRLrQiD22ZD42a0J3CGdOPn0YjSJvOCBVIe2Ix0KiRfBNj0-ag_8gf3pggCtJtc7REwXwIb6mIRVwl22JOJzkckPx2gZ_fZmlrcLOCR2cb8nSe9yv8SPcSaYCMmW1qDJUfKglk5QqMUeLe3g9btQOYi-g",
+    img: peugeot3008Image,
     alt: "2020 bronze copper metallic Peugeot 3008 GT Line Premium SUV on the East Midland Cars Leicester forecourt",
   },
   {
@@ -58,7 +64,7 @@ const CARS = [
     fuel: "Diesel",
     photos: 34,
     badges: ["4MATIC AWD"],
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBq8KMDinS7MqIt6_OmigrvDqlWugpNKcfsgBCMJHtB9sdvMrILjvqk3XtEObrDNtFuJPbWMb2uFF5-exCC6Cs6-EThYqXmicEuFVsj13OTyjqFqFKxxXrQhXkZZfMKHnHNG_DNGMi1JotM58kizkFV13D13Os9jjC6owcG6oDgGkvBvFg3gQzNP4MLfUa0wIf-yR99u1AuPm3TwPa2HOkEKXL98gXxydOoTgCR9dESwqK1c9b6eh7DUg",
+    img: mercedesAClassImage,
     alt: "Bright red Mercedes Benz A Class A220d AMG Line hatchback under East Midland Cars showroom lighting",
   },
   {
@@ -75,7 +81,7 @@ const CARS = [
     fuel: "Diesel",
     photos: 42,
     badges: ["M Sport", "Harman Kardon"],
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAgTPAl7q1v3CRoixNiZIK7_O-iNHevdVgEgdH_qb05uH5EIjNyF_EhiR7hTBud6purqBmn318If63OnwLu1u92SX2SKmiGtOnmi8as_oV4wCHNvO5J3bIiu32Og9P1yHEnpEtJJYDmIamagkQRquPP9g8oqO-FJMC8CHR9vcQs4hl9fjmRk4ZODrCE15Avm4_kxOTvIgYRoWoVCWuKBQSADw4jw1sPno-qvDgdrQbT2svYu6U4qVw39Q",
+    img: bmw2SeriesImage,
     alt: "Metallic sapphire black BMW 2 Series 225d M Sport Convertible with the top down outside a British showroom",
   },
   {
@@ -92,7 +98,7 @@ const CARS = [
     fuel: "Petrol",
     photos: 26,
     badges: ["Low Mileage"],
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1UD6VSYiD4V5LGzeodVvuHhayAvH9lQFvnAavgyklCWeeoIQawIXaXUDsEX7j7gngGCdSKzeu9sf4nYhO0UGGgf8UvYqymz_fU8-GHpoJoS8Q4tf4H-XE5MvTcNobUPF0n0yGivCKUhPYLZArhuETEm_UgxxnrfCshMMVYSWFBahzZy01ww0xwF-_2GD_76KjR9TLFXShcpty675ESjklL8qiidh6q22wQkareJ4vQn",
+    img: bmw1SeriesImage,
     alt: "BMW 1 Series 118i Sport hatchback in East Midland Cars Leicester stock",
   },
   {
@@ -109,7 +115,7 @@ const CARS = [
     fuel: "Petrol",
     photos: 30,
     badges: ["Quattro 4WD"],
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1W7-p8Tn8Cd1s8T9UaIWdYrz8cG3gIJHCOn7QFkWjkv_LLCj_RNF1yC6JFd0iu5ggHi1g-EOzM99yXaKayjim83urCgliPfRXSSY9oYLS1S5KZx5tKRM9VEcLFeiAy8Eq-L5s2xNP7Yy4HlJG-wxdK6Kke5xZvF6brI3QUELMOr1l2P5tbXjG1tGu2WxyYZfH85XpGT5GoGPb9l4Bm8GZJWswzQ44QCPdboDF2uOBv6mQ",
+    img: audiTTImage,
     alt: "Audi TT Black Edition Coupe with Quattro 4WD badge on East Midland Cars forecourt",
   },
   {
@@ -126,7 +132,7 @@ const CARS = [
     fuel: "Petrol",
     photos: 22,
     badges: ["Only 18k Miles"],
-    img: "https://lh3.googleusercontent.com/aida/AEtjO1VEpomVK-gyngUlGcjhUywzw3hPrc-EVn7Sa502F-S_3jjNdDMTvWy7fBxZkXqreTxyH2XWH9kfNY_jPFznOu2phEJXWXrZfTiBtdTkIv1IAA1KTkMOCWgt1NQRZTLxQH-Ur1HLTmYarg298WckBpzub_3BfGLUm95FfjoZqIRLFUrs1HwcXCVapxHzY-nP0rfkqRDiCnUhH2byzMqCwp3igeBuWzPg9KYL_CXWw4xunQ",
+    img: hondaCivicImage,
     alt: "Honda Civic 1.4 i-VTEC S hatchback with ultra low mileage at East Midland Cars Leicester",
   },
 ];

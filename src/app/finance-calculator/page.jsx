@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FinanceCalculator from "@/components/FinanceCalculator";
 import Accordion from "@/components/Accordion";
+import heroImage from "@/assets/images/midnight_blue_sports_coupe_showroom.webp";
 
 export const metadata = {
   title: "Finance & Calculator | East Midland Cars Limited",
@@ -153,7 +154,7 @@ export default function FinanceCalculatorPage() {
                 <div className="bg-inverse-surface rounded-2xl p-space-md shadow-2xl relative overflow-hidden group">
                   <div className="aspect-[16/10] w-full rounded-xl overflow-hidden relative">
                     <Image
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiVBjuiIwHLKNNGlj17pyNtEr9tf472OxfYsr6SGJW5Lwrp62ISxxULpLW7XsYGLK3XGxzQE7Fqw_KRl4P1gDWRUZ3b04dGmJfK0VmJ93DFRN3XkY9tUQPj3hYUAiPnAiKhnv8zONcXOT-VQ2B5u40sDzeix1rVqG-0_448jmoQNSWEePkTT3dSV-7lyVOw8oc3thyCBuOHiburf8N_uJtdKpjmVSQb4QjI6k8ETsXIrApLfAfQE3ZwA"
+                      src={heroImage}
                       alt="Electric blue Audi RS5 performance coupe under cinematic studio lighting in a British executive car showroom"
                       width={640}
                       height={400}
