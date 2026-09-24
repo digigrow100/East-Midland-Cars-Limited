@@ -107,7 +107,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link className="hover:text-on-primary transition-colors" href="/finance-calculator">
-                  Finance &amp; Calculator
+                  Finance
                 </Link>
               </li>
               <li>
@@ -125,7 +125,7 @@ export default function Footer() {
             <ul className="space-y-space-xs font-body-sm text-body-sm text-primary-fixed-dim">
               <li>
                 <Link className="hover:text-on-primary transition-colors" href="/finance-calculator">
-                  PCP &amp; HP Finance Calculator
+                  PCP &amp; HP Finance
                 </Link>
               </li>
               <li>

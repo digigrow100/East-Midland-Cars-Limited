@@ -1,15 +1,37 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import FinanceCalculator from "@/components/FinanceCalculator";
 import Accordion from "@/components/Accordion";
 import heroImage from "@/assets/images/midnight_blue_sports_coupe_showroom.webp";
 
 export const metadata = {
-  title: "Finance & Calculator | East Midland Cars Limited",
+  title: "Finance | East Midland Cars Limited",
   description:
-    "Calculate your HP or PCP monthly payments instantly. Flexible used car finance from 8.9% APR representative, arranged through Finset Limited.",
+    "Flexible HP and PCP used car finance from 8.9% APR representative, arranged through Finset Limited. Soft search pre-approval with no impact on your credit score.",
 };
+
+const WHY_FINANCE_WITH_US = [
+  {
+    icon: "percent",
+    title: "Rates From 8.9% APR",
+    body: "Competitive representative rates sourced across our panel of prime and specialist lenders, matched to your individual circumstances.",
+  },
+  {
+    icon: "account_balance_wallet",
+    title: "Deposits From £0",
+    body: "Choose a deposit that suits your budget, from nothing down to a larger sum that lowers your monthly payments further.",
+  },
+  {
+    icon: "diversity_3",
+    title: "All Credit Profiles Welcome",
+    body: "Whether your credit history is spotless or you have had past difficulties, our broker partnership finds a lender willing to work with you.",
+  },
+  {
+    icon: "bolt",
+    title: "Fast, Score-Safe Decisions",
+    body: "A soft search gives you an eligibility answer in around a minute, without leaving any mark on your credit file.",
+  },
+];
 
 const FAQ_ITEMS = [
   {
@@ -135,11 +157,11 @@ export default function FinanceCalculatorPage() {
                 </div>
                 <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
                   <a
-                    href="#calculator"
+                    href="tel:01162898888"
                     className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md"
                   >
-                    <span>Calculate Your Monthly Quote</span>
-                    <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
+                    <span>Apply for Finance</span>
+                    <span className="material-symbols-outlined text-[18px]">call</span>
                   </a>
                   <a
                     href="#how-it-works"
@@ -181,21 +203,31 @@ export default function FinanceCalculatorPage() {
             </div>
           </section>
 
-          {/* Calculator */}
-          <section className="w-full py-space-2xl px-margin-mobile lg:px-margin-desktop bg-surface" id="calculator">
+          {/* Why finance with us */}
+          <section className="w-full py-space-2xl px-margin-mobile lg:px-margin-desktop bg-surface">
             <div className="max-w-[1320px] mx-auto">
               <div className="text-center max-w-2xl mx-auto mb-space-xl">
                 <div className="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase mb-space-xs">
-                  <span className="material-symbols-outlined text-[16px] text-secondary">tune</span>
-                  Tailored Quotation Engine
+                  <span className="material-symbols-outlined text-[16px] text-secondary">thumb_up</span>
+                  Why Finance With Us
                 </div>
-                <h2 className="font-headline-xl text-headline-xl text-on-surface">Interactive Car Finance Calculator</h2>
+                <h2 className="font-headline-xl text-headline-xl text-on-surface">Straightforward Car Finance, No Surprises</h2>
                 <p className="font-body-md text-body-md text-on-surface-variant pt-2">
-                  Adjust terms, deposit, and package types to calculate accurate representative
-                  monthly rates customized to your individual financial plan.
+                  We keep motor finance simple: clear rates, honest advice, and a team on hand to
+                  talk you through your options in plain English.
                 </p>
               </div>
-              <FinanceCalculator />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+                {WHY_FINANCE_WITH_US.map((item) => (
+                  <div key={item.title} className="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div className="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center mb-space-md">
+                      <span className="material-symbols-outlined text-[24px]">{item.icon}</span>
+                    </div>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-xs">{item.title}</h3>
+                    <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{item.body}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
 
@@ -364,7 +396,7 @@ export default function FinanceCalculatorPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-space-sm shrink-0 w-full sm:w-auto">
-                <a href="#calculator" className="px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center shadow-md">
+                <a href="tel:01162898888" className="px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center shadow-md">
                   Start Soft Search Application
                 </a>
                 <a href="tel:01162898888" className="px-6 py-3.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-surface-container-high/20 transition-all text-center">

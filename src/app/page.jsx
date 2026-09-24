@@ -619,17 +619,17 @@ export default function Home() {
                     Transparent Motor Finance
                   </span>
                   <h2 className="font-headline-xl text-headline-xl font-bold uppercase tracking-tight text-on-surface">
-                    Personalized Finance Estimator
+                    Simple, Straightforward Finance
                   </h2>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Use our full interactive HP &amp; PCP calculator to customise your deposit,
-                    term and vehicle budget for a transparent, representative monthly estimate.
+                    Flexible HP &amp; PCP packages with rates from 8.9% APR representative, matched
+                    to your deposit, budget and circumstances by our FCA-regulated finance team.
                   </p>
                   <Link
                     href="/finance-calculator"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold hover:bg-on-secondary-container transition-all shadow-sm"
                   >
-                    <span>Open the Finance Calculator</span>
+                    <span>See Finance Options</span>
                     <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                   </Link>
                 </div>
