@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo from "@/assets/images/east-midland-cars-logo.webp";
 
 export default function Footer() {
   return (
@@ -58,10 +60,8 @@ export default function Footer() {
         {/* 4-column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
           <div className="space-y-space-sm">
-            <div className="flex items-center gap-space-sm">
-              <span className="font-headline-sm text-headline-sm uppercase text-on-primary font-bold">
-                East Midland Cars
-              </span>
+            <div className="inline-flex items-center bg-surface-container-lowest rounded-lg px-3 py-2">
+              <Image src={logo} alt="East Midland Cars Limited" className="h-7 w-auto" />
             </div>
             <p className="font-body-sm text-body-sm text-primary-fixed-dim pt-space-xs">
               A prestigious quality used car dealership based in Leicester,

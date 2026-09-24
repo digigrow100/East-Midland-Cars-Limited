@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import logo from "@/assets/images/east-midland-cars-logo.webp";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -66,9 +68,12 @@ export default function Header() {
       <div className="h-20 max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-md">
           <Link href="/" className="flex items-center gap-space-sm">
-            <span className="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight font-bold">
-              East Midland Cars
-            </span>
+            <Image
+              src={logo}
+              alt="East Midland Cars Limited"
+              className="h-9 w-auto"
+              priority
+            />
           </Link>
         </div>
 
