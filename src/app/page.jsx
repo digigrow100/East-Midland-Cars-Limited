@@ -723,7 +723,12 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="space-y-space-sm">
-                      <div className="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+                      <a
+                        className="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors"
+                        href="https://maps.google.com/?q=Unit+38+Oswin+Road+Leicester+LE3+1HR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <span className="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">location_on</span>
                         <div>
                           <h4 className="font-label-md text-label-md font-bold text-on-surface">Dealership Address</h4>
@@ -731,7 +736,7 @@ export default function Home() {
                             Unit 38 Oswin Road, Leicester, LE3 1HR
                           </p>
                         </div>
-                      </div>
+                      </a>
                       <div className="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
                         <span className="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">call</span>
                         <div>
