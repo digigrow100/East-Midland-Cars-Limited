@@ -96,23 +96,18 @@ export default function Footer() {
             </p>
             <ul className="space-y-space-xs font-body-sm text-body-sm text-primary-fixed-dim">
               <li>
-                <Link className="hover:text-on-primary transition-colors" href="/showroom-stocklist">
-                  Showroom Stocklist
-                </Link>
-              </li>
-              <li>
                 <a
                   className="hover:text-on-primary transition-colors"
                   href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                 >
-                  View Stock on AutoTrader
+                  Showroom Stocklist
                 </a>
               </li>
               <li>
                 <Link className="hover:text-on-primary transition-colors" href="/finance-calculator">
-                  Finance &amp; Calculator
+                  Finance
                 </Link>
               </li>
               <li>
@@ -130,7 +125,7 @@ export default function Footer() {
             <ul className="space-y-space-xs font-body-sm text-body-sm text-primary-fixed-dim">
               <li>
                 <Link className="hover:text-on-primary transition-colors" href="/finance-calculator">
-                  PCP &amp; HP Finance Calculator
+                  PCP &amp; HP Finance
                 </Link>
               </li>
               <li>

@@ -348,7 +348,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-end">
                   <a
-                    href="/showroom-stocklist"
+                    href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
                     className="w-full h-[44px] bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-label-md text-label-md uppercase tracking-wider font-bold rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all"
                   >
                     <span className="material-symbols-outlined text-[20px]">search</span>
@@ -481,12 +483,14 @@ export default function Home() {
                 >
                   Request Specific Vehicle
                 </Link>
-                <Link
-                  href="/showroom-stocklist"
+                <a
+                  href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                   className="w-full md:w-auto text-center px-5 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-on-secondary-container transition-colors shadow-sm"
                 >
                   View All 45+ Cars
-                </Link>
+                </a>
               </div>
             </div>
           </section>
@@ -615,17 +619,17 @@ export default function Home() {
                     Transparent Motor Finance
                   </span>
                   <h2 className="font-headline-xl text-headline-xl font-bold uppercase tracking-tight text-on-surface">
-                    Personalized Finance Estimator
+                    Simple, Straightforward Finance
                   </h2>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Use our full interactive HP &amp; PCP calculator to customise your deposit,
-                    term and vehicle budget for a transparent, representative monthly estimate.
+                    Flexible HP &amp; PCP packages with rates from 8.9% APR representative, matched
+                    to your deposit, budget and circumstances by our FCA-regulated finance team.
                   </p>
                   <Link
                     href="/finance-calculator"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold hover:bg-on-secondary-container transition-all shadow-sm"
                   >
-                    <span>Open the Finance Calculator</span>
+                    <span>See Finance Options</span>
                     <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
                   </Link>
                 </div>

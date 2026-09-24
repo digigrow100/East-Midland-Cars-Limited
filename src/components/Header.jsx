@@ -6,9 +6,12 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import logo from "@/assets/images/east-midland-cars-logo.webp";
 
+const AUTOTRADER_URL =
+  "https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803";
+
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/showroom-stocklist", label: "Stocklist" },
+  { href: AUTOTRADER_URL, label: "Stocklist", external: true },
   { href: "/finance-calculator", label: "Finance" },
   { href: "/warranty-rac", label: "Warranty & RAC" },
   { href: "/customer-reviews", label: "Customer Reviews" },
@@ -37,6 +40,19 @@ export default function Header() {
         <nav className="hidden xl:flex items-center gap-space-xs p-1">
           {NAV_LINKS.map((link) => {
             const active = pathname === link.href;
+            if (link.external) {
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap"
+                >
+                  {link.label}
+                </a>
+              );
+            }
             return (
               <Link
                 key={link.href}
@@ -56,19 +72,13 @@ export default function Header() {
 
         <div className="flex items-center gap-space-sm">
           <a
-            href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+            href={AUTOTRADER_URL}
             target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:inline-flex items-center px-3 py-2.5 rounded-lg border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-all whitespace-nowrap"
-          >
-            View on AutoTrader
-          </a>
-          <Link
-            href="/showroom-stocklist"
+            rel="noopener noreferrer nofollow"
             className="hidden md:inline-flex items-center px-4 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container hover:text-on-secondary transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
           >
             Browse 45+ Cars
-          </Link>
+          </a>
           <Link
             href="/finance-calculator"
             className="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-inverse-surface hover:text-inverse-on-surface transition-all"
@@ -103,6 +113,20 @@ export default function Header() {
           <nav className="flex flex-col p-space-md gap-1">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
+              if (link.external) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    onClick={() => setMenuOpen(false)}
+                    className="px-3 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container min-h-[44px] flex items-center whitespace-nowrap"
+                  >
+                    {link.label}
+                  </a>
+                );
+              }
               return (
                 <Link
                   key={link.href}
@@ -122,21 +146,14 @@ export default function Header() {
           </nav>
           <div className="p-space-md pt-0 flex flex-col gap-space-sm">
             <a
-              href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+              href={AUTOTRADER_URL}
               target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="inline-flex items-center justify-center px-4 py-3 rounded-lg border border-outline-variant text-on-surface-variant font-label-md text-label-md min-h-[44px]"
-            >
-              View on AutoTrader
-            </a>
-            <Link
-              href="/showroom-stocklist"
+              rel="noopener noreferrer nofollow"
               onClick={() => setMenuOpen(false)}
               className="inline-flex items-center justify-center px-4 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md min-h-[44px]"
             >
               Browse 45+ Cars
-            </Link>
+            </a>
             <Link
               href="/finance-calculator"
               onClick={() => setMenuOpen(false)}

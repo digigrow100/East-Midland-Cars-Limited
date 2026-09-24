@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ReviewsGrid from "@/components/ReviewsGrid";
@@ -287,13 +286,15 @@ export default function CustomerReviewsPage() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full lg:w-auto relative z-10 shrink-0">
-                  <Link
-                    href="/showroom-stocklist"
+                  <a
+                    href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
                     className="inline-flex items-center justify-center gap-space-xs px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container hover:text-on-secondary transition-all shadow-md"
                   >
                     <span className="material-symbols-outlined text-[18px]">directions_car</span>
                     Browse Available Stock
-                  </Link>
+                  </a>
                   <a
                     href="tel:01162898888"
                     className="inline-flex items-center justify-center gap-space-xs px-6 py-3 rounded-lg bg-inverse-surface text-on-primary font-label-md text-label-md hover:bg-surface-container-high/20 transition-all"
