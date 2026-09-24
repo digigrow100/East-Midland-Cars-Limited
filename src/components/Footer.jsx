@@ -176,33 +176,91 @@ export default function Footer() {
             FCA Regulatory Declaration &amp; Legal Disclosure
           </p>
           <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
-            East Midland Cars Limited is registered on the Financial Services
-            Register under Firm Reference Number (FRN) 1058774 as an
-            Appointed Representative of Finset Limited (FRN 987805). Finset
-            Limited is authorised and regulated by the Financial Conduct
-            Authority.
-          </p>
-          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed font-semibold">
-            Company Number: 14262253 | FCA FRN: 1058774 | Finset FRN: 987805 |
-            ICO Number: ZC152902
+            East Midland Cars Limited is a trading name of East Midland Cars Limited. Company
+            Number 14262253. Registered address: Unit 38 Oswin Road, Leicester, LE3 1HR.
           </p>
           <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
-            We act as a credit broker not a lender. All finance is subject to
-            status and income. Terms and Conditions Apply.
+            East Midland Cars Limited is an Introducer Appointed Representative of Finset Limited.
+            Finset Limited is authorised and regulated by the Financial Conduct Authority under
+            reference No. 987805. They act as a credit broker, not a lender. Our FCA Reference
+            Number is 1058774.
           </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            For details on the services they provide, please see our{" "}
+            <Link className="underline hover:text-on-primary transition-colors" href="/initial-disclosure-document">
+              Initial Disclosure Document
+            </Link>
+            .
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            Please note, as an Introducer Appointed Representative, we act as a broker, not a
+            lender. We are only able to introduce you to Finset Limited; we are not able to
+            discuss any finance application or acceptance in detail. For any questions, we
+            recommend contacting Finset Limited directly.
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed font-semibold">
+            Company Number: 14262253 | FCA FRN: 1058774 | Finset FRN: 987805 | ICO Number:
+            ZC152902
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            All finance is subject to status. Terms and conditions apply.
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            East Midland Cars Limited or Finset Limited are not financial advisors and will not
+            provide advice or a recommendation on finance products.
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            Finset Limited works with a specific panel of lenders to try to obtain an approval.
+            They are only able to offer finance products from lenders on their panel.
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            We receive a commission for introducing customers to Finset Limited if they proceed
+            with a finance acceptance. This commission is a fixed payment or fixed percentage of
+            the amount financed but can vary by partner. This does not impact the rate provided.
+            Full information will be provided before completing the finance agreement and further
+            information can be requested at any time.
+          </p>
+          <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+            East Midland Cars Limited or Finset Limited do not charge a fee for the services
+            provided.
+          </p>
+          <div className="flex flex-wrap items-center gap-space-md pt-space-xs font-legal-fineprint text-legal-fineprint text-inverse-on-surface">
+            <span className="flex items-center gap-1.5">
+              <span className="material-symbols-outlined text-[16px] text-secondary-container">call</span>
+              07538 000250
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="material-symbols-outlined text-[16px] text-secondary-container">mail</span>
+              emccars@outlook.com
+            </span>
+          </div>
           <div className="pt-space-sm flex flex-wrap items-center justify-between gap-space-sm font-legal-fineprint text-legal-fineprint text-primary-fixed-dim">
             <div className="flex flex-wrap gap-space-md">
               <Link className="hover:text-on-primary transition-colors" href="/initial-disclosure-document">
                 Initial Disclosure Document
               </Link>
+              <Link className="hover:text-on-primary transition-colors" href="/complaints">
+                Complaints
+              </Link>
               <a className="hover:text-on-primary transition-colors" href="#">
                 Privacy Policy
               </a>
               <a className="hover:text-on-primary transition-colors" href="#">
-                Terms of Business
+                Finset Privacy Policy
+              </a>
+              <Link className="hover:text-on-primary transition-colors" href="/finance-calculator#commission-disclosure">
+                Commission Disclosure
+              </Link>
+              <a
+                className="hover:text-on-primary transition-colors"
+                href="https://register.fca.org.uk/s/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FCA Register
               </a>
               <a className="hover:text-on-primary transition-colors" href="#">
-                Complaints Procedure
+                Terms of Business
               </a>
               <a className="hover:text-on-primary transition-colors" href="#">
                 Cookie Preferences
