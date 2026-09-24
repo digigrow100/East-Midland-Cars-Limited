@@ -387,7 +387,7 @@ export default function FinanceCalculatorPage() {
           </section>
 
           {/* Commission disclosure */}
-          <section className="w-full py-space-2xl px-margin-mobile lg:px-margin-desktop bg-surface-container-low">
+          <section id="commission-disclosure" className="w-full py-space-2xl px-margin-mobile lg:px-margin-desktop bg-surface-container-low scroll-mt-28">
             <div className="max-w-[1320px] mx-auto">
               <div className="bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl space-y-space-lg">
                 <div>
