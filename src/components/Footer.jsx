@@ -1,8 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-
-const LOGO_SRC =
-  "https://lh3.googleusercontent.com/aida/AEtjO1X5NRTkbtrcHJBFGfU18aS03L1zZvzszyYp2mKDSbpm1YDiA8qF_b_vUhyykvsKVJY-3aN8V4C-ippbRfDn2Qc7Y5129cxFY0wuvFDUTKKF72VPf1ysKL1ylngk-ylOQ3-lwTFNbvMDiYf7kqEFAuFTeG_Jpo36OONw3FIO8GCPVShsB-ccG3wB-JXQhPk_QdjCZWGPnsFehtk1PDxVVGys68YW0ELDENKpxR-y-Egz";
 
 export default function Footer() {
   return (
@@ -63,13 +59,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-2xl">
           <div className="space-y-space-sm">
             <div className="flex items-center gap-space-sm">
-              <Image
-                src={LOGO_SRC}
-                alt="East Midland Cars Limited Logo"
-                width={120}
-                height={32}
-                className="h-8 w-auto object-contain"
-              />
               <span className="font-headline-sm text-headline-sm uppercase text-on-primary font-bold">
                 East Midland Cars
               </span>
@@ -80,12 +69,17 @@ export default function Footer() {
               across the Midlands and the UK.
             </p>
             <div className="pt-space-xs font-body-sm text-body-sm text-inverse-on-surface space-y-1">
-              <p className="flex items-center gap-space-xs">
+              <a
+                className="flex items-center gap-space-xs hover:text-on-primary transition-colors"
+                href="https://maps.google.com/?q=Unit+38+Oswin+Road+Leicester+LE3+1HR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
                   location_on
                 </span>
                 Unit 38 Oswin Road, Leicester, LE3 1HR
-              </p>
+              </a>
               <p className="flex items-center gap-space-xs">
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
                   call

@@ -1,22 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const LOGO_SRC =
-  "https://lh3.googleusercontent.com/aida/AEtjO1X5NRTkbtrcHJBFGfU18aS03L1zZvzszyYp2mKDSbpm1YDiA8qF_b_vUhyykvsKVJY-3aN8V4C-ippbRfDn2Qc7Y5129cxFY0wuvFDUTKKF72VPf1ysKL1ylngk-ylOQ3-lwTFNbvMDiYf7kqEFAuFTeG_Jpo36OONw3FIO8GCPVShsB-ccG3wB-JXQhPk_QdjCZWGPnsFehtk1PDxVVGys68YW0ELDENKpxR-y-Egz";
-
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/showroom-stocklist", label: "Showroom / Stocklist" },
-  { href: "/finance-calculator", label: "Finance & Calculator" },
+  { href: "/showroom-stocklist", label: "Stocklist" },
+  { href: "/finance-calculator", label: "Finance" },
   { href: "/sell-your-car", label: "Sell Your Car" },
   { href: "/request-a-car", label: "Request a Car" },
   { href: "/warranty-rac", label: "Warranty & RAC" },
   { href: "/customer-reviews", label: "Customer Reviews" },
-  { href: "/contact-us-visit", label: "Contact Us / Visit" },
+  { href: "/contact-us-visit", label: "Contact Us" },
 ];
 
 export default function Header() {
@@ -70,15 +66,7 @@ export default function Header() {
       <div className="h-20 max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-md">
           <Link href="/" className="flex items-center gap-space-sm">
-            <Image
-              src={LOGO_SRC}
-              alt="East Midland Cars Limited Logo"
-              width={120}
-              height={32}
-              className="h-8 w-auto object-contain"
-              priority
-            />
-            <span className="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight font-bold hidden sm:inline">
+            <span className="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight font-bold">
               East Midland Cars
             </span>
           </Link>
@@ -94,8 +82,8 @@ export default function Header() {
                 aria-current={active ? "page" : undefined}
                 className={
                   active
-                    ? "px-3 py-2 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg font-label-md text-label-md"
-                    : "px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                    ? "px-3 py-2 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg font-label-md text-label-md whitespace-nowrap"
+                    : "px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap"
                 }
               >
                 {link.label}
@@ -117,11 +105,6 @@ export default function Header() {
           >
             Get Finance Approved
           </Link>
-          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1">
-            <span className="material-symbols-outlined text-on-primary text-[18px]">
-              person
-            </span>
-          </div>
 
           {/* Mobile hamburger toggle: the source mockups hide the nav below
               xl with no mobile menu at all. This adds a working toggle so
@@ -158,8 +141,8 @@ export default function Header() {
                   aria-current={active ? "page" : undefined}
                   className={
                     active
-                      ? "px-3 py-3 rounded-lg bg-surface-container-high text-on-surface font-semibold font-label-md text-label-md min-h-[44px] flex items-center"
-                      : "px-3 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container min-h-[44px] flex items-center"
+                      ? "px-3 py-3 rounded-lg bg-surface-container-high text-on-surface font-semibold font-label-md text-label-md min-h-[44px] flex items-center whitespace-nowrap"
+                      : "px-3 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container min-h-[44px] flex items-center whitespace-nowrap"
                   }
                 >
                   {link.label}
