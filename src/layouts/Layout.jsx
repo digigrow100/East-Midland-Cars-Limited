@@ -11,7 +11,7 @@ export function generateLayoutMetadata({ title, description }) {
     title: resolvedTitle,
     description: resolvedDescription,
     icons: {
-      icon: "/favicon.svg",
+      icon: [{ url: "/favicon.webp", type: "image/webp" }],
     },
     openGraph: {
       title: resolvedTitle,
