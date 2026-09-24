@@ -6,6 +6,9 @@ export const metadata = {
   title: "Showroom Stocklist | East Midland Cars Limited",
   description:
     "Browse the full Leicester showroom stocklist: handpicked executive and quality used cars, all RAC & AA inspected with clear HPI history.",
+  robots: {
+    follow: false,
+  },
 };
 
 export default function ShowroomStocklistPage() {
