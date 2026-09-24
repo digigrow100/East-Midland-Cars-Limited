@@ -7,29 +7,29 @@ import heroImage from "@/assets/images/audi_rs3_green_rear_used_car.webp";
 export const metadata = {
   title: "Finance | East Midland Cars Limited",
   description:
-    "Flexible HP and PCP used car finance from 8.9% APR representative, arranged through Finset Limited. Soft search pre-approval with no impact on your credit score.",
+    "Flexible vehicle finance in Leicester. East Midland Cars Limited can introduce you to Finset Limited, who may be able to help you finance your vehicle through their panel of lenders.",
 };
 
 const WHY_FINANCE_WITH_US = [
   {
     icon: "percent",
-    title: "Rates From 8.9% APR",
-    body: "Competitive representative rates sourced across our panel of prime and specialist lenders, matched to your individual circumstances.",
+    title: "Finance Through Finset Limited",
+    body: "We can introduce you to Finset Limited, who work with a specific panel of lenders to try to obtain you an approval. They are only able to offer finance products from lenders on their panel.",
   },
   {
     icon: "account_balance_wallet",
-    title: "Deposits From £0",
-    body: "Choose a deposit that suits your budget, from nothing down to a larger sum that lowers your monthly payments further.",
+    title: "Finance Subject to Status",
+    body: "All finance is subject to status and terms and conditions apply. The finance options available will depend on your individual circumstances and the products available through Finset Limited.",
   },
   {
     icon: "diversity_3",
-    title: "All Credit Profiles Welcome",
-    body: "Whether your credit history is spotless or you have had past difficulties, our broker partnership finds a lender willing to work with you.",
+    title: "Panel of Lenders",
+    body: "Finset Limited works with a specific panel of lenders. Please note they are only able to offer finance products from the lenders on their panel.",
   },
   {
     icon: "bolt",
-    title: "Fast, Score-Safe Decisions",
-    body: "A soft search gives you an eligibility answer in around a minute, without leaving any mark on your credit file.",
+    title: "Introduced to Finset Limited",
+    body: "As an Introducer Appointed Representative, East Midland Cars Limited is only able to introduce you to Finset Limited. We are not able to discuss any finance application or acceptance in detail.",
   },
 ];
 
@@ -64,31 +64,27 @@ const FAQ_ITEMS = [
 const HOW_IT_WORKS = [
   {
     step: "01",
-    title: "Choose & Set Budget",
-    body: "Explore our handpicked Leicester inventory of prestige, executive, and family cars. Establish your target monthly budget and preferred deposit.",
+    title: "Choose Your Vehicle",
+    body: "Browse our available vehicles and choose the car you are interested in purchasing. You can also consider the deposit and monthly budget that may suit your circumstances.",
     icon: "manage_search",
-    note: "Over 70+ cars in stock",
   },
   {
     step: "02",
-    title: "60-Sec Soft Search",
-    body: "Complete our rapid online verification. A soft inquiry checks eligibility instantly without marking or reducing your credit score in any way.",
+    title: "Make a Finance Enquiry",
+    body: "Once you have chosen a vehicle, you can make a finance enquiry. East Midland Cars Limited can introduce you to Finset Limited for the purpose of arranging vehicle finance.",
     icon: "verified_user",
-    note: "Zero credit score impact",
   },
   {
     step: "03",
-    title: "Tailored Lender Matching",
-    body: "Through our Finset partnership, your application is dynamically matched with over 20 top tier UK lenders to secure the lowest feasible APR.",
+    title: "Finset Limited",
+    body: "Finset Limited works with a specific panel of lenders to try to obtain you an approval. Please note they are only able to offer you finance products from the lenders on their panel.",
     icon: "hub",
-    note: "Prime & Sub-Prime coverage",
   },
   {
     step: "04",
-    title: "Leicester Drive Away",
-    body: "Sign paperwork electronically or in our Oswin Road showroom. Collect your fully valeted, RAC-inspected vehicle or arrange local delivery.",
+    title: "Complete Your Purchase",
+    body: "If your finance application is accepted and all required documentation and checks have been completed, we can arrange collection of your vehicle from East Midland Cars Limited.",
     icon: "key",
-    note: "Same-day handover possible",
   },
 ];
 
@@ -100,27 +96,11 @@ export default function FinanceCalculatorPage() {
         <div className="flex flex-col w-full">
           {/* Trust pill banner */}
           <section className="w-full bg-surface-container-low py-space-md px-margin-mobile lg:px-margin-desktop">
-            <div className="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
-              <div className="flex items-center gap-space-md flex-wrap">
-                <span className="flex items-center gap-space-xs text-secondary font-semibold">
-                  <span className="material-symbols-outlined text-[16px]">verified</span>
-                  FCA Regulated Representative (FRN: 1058774)
-                </span>
-                <span className="text-outline-variant">|</span>
-                <span className="flex items-center gap-space-xs">
-                  <span className="material-symbols-outlined text-[16px]">shield_lock</span>
-                  Soft Credit Search Only — Zero Credit Score Impact
-                </span>
-                <span className="text-outline-variant">|</span>
-                <span className="flex items-center gap-space-xs">
-                  <span className="material-symbols-outlined text-[16px]">payments</span>
-                  From 8.9% APR Representative
-                </span>
-              </div>
-              <div className="flex items-center gap-space-xs text-on-surface">
-                <span className="material-symbols-outlined text-[16px] text-secondary">flash_on</span>
-                <span>Decision within 60 seconds</span>
-              </div>
+            <div className="max-w-[1320px] mx-auto flex flex-wrap items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+              <span className="flex items-center gap-space-xs text-secondary font-semibold">
+                <span className="material-symbols-outlined text-[16px]">verified</span>
+                FCA Regulated Representative (FRN: 1058774)
+              </span>
             </div>
           </section>
 
@@ -134,26 +114,33 @@ export default function FinanceCalculatorPage() {
                   Midlands Premier Automotive Finance
                 </div>
                 <h1 className="font-display-hero text-headline-xl lg:text-display-hero tracking-tight text-on-primary">
-                  Flexible, Competitive Used Car Finance in Leicester
+                  Flexible Vehicle Finance
                 </h1>
                 <p className="font-body-lg text-body-lg text-inverse-on-surface/90 max-w-2xl leading-relaxed">
-                  Tailored Hire Purchase (HP) &amp; Personal Contract Purchase (PCP) packages from
-                  8.9% APR Representative. Pre-approval in 60 seconds with no impact on your credit
-                  score.
+                  We can introduce you to Finset Limited, who may be able to help you finance your
+                  vehicle through their specific panel of lenders.
                 </p>
-                <div className="grid grid-cols-3 gap-space-md pt-space-md max-w-xl">
-                  <div className="bg-inverse-surface/60 rounded-xl p-space-sm backdrop-blur-sm">
-                    <p className="font-headline-lg text-headline-lg text-secondary-fixed">8.9%</p>
-                    <p className="font-label-sm text-label-sm text-primary-fixed-dim">Representative APR</p>
-                  </div>
-                  <div className="bg-inverse-surface/60 rounded-xl p-space-sm backdrop-blur-sm">
-                    <p className="font-headline-lg text-headline-lg text-secondary-fixed">24+</p>
-                    <p className="font-label-sm text-label-sm text-primary-fixed-dim">Approved Lenders</p>
-                  </div>
-                  <div className="bg-inverse-surface/60 rounded-xl p-space-sm backdrop-blur-sm">
-                    <p className="font-headline-lg text-headline-lg text-secondary-fixed">£0</p>
-                    <p className="font-label-sm text-label-sm text-primary-fixed-dim">Deposit Option</p>
-                  </div>
+                <p className="font-body-md text-body-md text-inverse-on-surface/80 max-w-2xl leading-relaxed">
+                  East Midland Cars Limited is an Introducer Appointed Representative of Finset
+                  Limited. Finset Limited acts as a credit broker, not a lender.
+                </p>
+                <div className="max-w-2xl bg-inverse-surface/60 rounded-xl p-space-md backdrop-blur-sm space-y-2">
+                  <p className="font-label-md text-label-md text-secondary-fixed uppercase tracking-wide font-semibold">
+                    Representative HP Example
+                  </p>
+                  <p className="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
+                    Finset act as a Broker, not a Lender. A Representative HP Example: borrowing
+                    £10,000 over 60 Months with a representative of 15.98% APR, an annual interest
+                    rate of 15.98% (fixed) and a deposit of £0.00, the amount payable would be 59
+                    repayments of £237.46 per month, with one final repayment of £247.46 (which
+                    includes the option to purchase fee of £10.00), with a total cost of credit of
+                    £4,247.60 and a total amount payable of £14,257.60.
+                  </p>
+                  <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim leading-relaxed">
+                    Finset Finance is a broker, not a lender. This means that they may offer
+                    different rates and the above is for illustrative purposes only and is not a
+                    quote or an offer of finance.
+                  </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
                   <a
@@ -162,13 +149,6 @@ export default function FinanceCalculatorPage() {
                   >
                     <span>Apply for Finance</span>
                     <span className="material-symbols-outlined text-[18px]">call</span>
-                  </a>
-                  <a
-                    href="#how-it-works"
-                    className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-surface-container-high/20 transition-all"
-                  >
-                    <span>How Pre-Approval Works</span>
-                    <span className="material-symbols-outlined text-[18px]">verified_user</span>
                   </a>
                 </div>
               </div>
@@ -207,8 +187,9 @@ export default function FinanceCalculatorPage() {
                 </div>
                 <h2 className="font-headline-xl text-headline-xl text-on-surface">Straightforward Car Finance, No Surprises</h2>
                 <p className="font-body-md text-body-md text-on-surface-variant pt-2">
-                  We keep motor finance simple: clear rates, honest advice, and a team on hand to
-                  talk you through your options in plain English.
+                  We keep vehicle finance simple and transparent. East Midland Cars Limited can
+                  introduce you to Finset Limited, who may be able to help you explore vehicle
+                  finance options from their panel of lenders.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
@@ -233,10 +214,11 @@ export default function FinanceCalculatorPage() {
                   <span className="material-symbols-outlined text-[16px] text-secondary">approval</span>
                   Straightforward 4-Step Process
                 </div>
-                <h2 className="font-headline-xl text-headline-xl text-on-surface">How Car Finance Works at East Midland Cars</h2>
+                <h2 className="font-headline-xl text-headline-xl text-on-surface">How Vehicle Finance Works</h2>
                 <p className="font-body-md text-body-md text-on-surface-variant pt-2">
-                  Experience frictionless automotive finance. From digital pre-approval to driving
-                  away from our Leicester showroom within 24 hours.
+                  East Midland Cars Limited can introduce you to Finset Limited, who may be able to
+                  help you finance your chosen vehicle through their panel of lenders. Finance is
+                  subject to status and terms and conditions apply.
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
@@ -249,9 +231,8 @@ export default function FinanceCalculatorPage() {
                       <h3 className="font-headline-sm text-headline-sm text-on-surface mb-space-xs">{item.title}</h3>
                       <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{item.body}</p>
                     </div>
-                    <div className="pt-space-md flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+                    <div className="pt-space-md flex items-center gap-space-xs text-secondary">
                       <span className="material-symbols-outlined text-[18px]">{item.icon}</span>
-                      <span>{item.note}</span>
                     </div>
                   </div>
                 ))}
