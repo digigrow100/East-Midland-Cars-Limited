@@ -30,7 +30,7 @@ export default function Header() {
             <Image
               src={logo}
               alt="East Midland Cars Limited"
-              className="h-9 w-auto"
+              className="h-12 w-auto"
               priority
             />
           </Link>
