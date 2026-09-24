@@ -2,7 +2,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Accordion from "@/components/Accordion";
-import heroImage from "@/assets/images/midnight_blue_sports_coupe_showroom.webp";
+import heroImage from "@/assets/images/audi_rs3_green_rear_used_car.webp";
 
 export const metadata = {
   title: "Finance | East Midland Cars Limited",
@@ -177,7 +177,7 @@ export default function FinanceCalculatorPage() {
                   <div className="aspect-[16/10] w-full rounded-xl overflow-hidden relative">
                     <Image
                       src={heroImage}
-                      alt="Electric blue Audi RS5 performance coupe under cinematic studio lighting in a British executive car showroom"
+                      alt="Kyalami Green Audi RS3 Sportback Quattro rear three-quarter view in the East Midland Cars Leicester showroom"
                       width={640}
                       height={400}
                       priority
@@ -187,15 +187,9 @@ export default function FinanceCalculatorPage() {
                     <div className="absolute top-3 left-3 bg-primary-container/80 backdrop-blur-md px-3 py-1 rounded-full text-secondary-fixed font-label-sm text-label-sm">
                       Featured Stock Finance
                     </div>
-                    <div className="absolute bottom-3 left-3 right-3 flex justify-between items-end">
-                      <div>
-                        <p className="font-headline-sm text-headline-sm text-on-primary">2021 Audi RS5 TFSI V6</p>
-                        <p className="font-body-sm text-body-sm text-primary-fixed-dim">Quattro Tiptronic • 28,400 Miles</p>
-                      </div>
-                      <div className="text-right">
-                        <span className="text-legal-fineprint text-primary-fixed-dim uppercase block">PCP From</span>
-                        <span className="font-headline-md text-headline-md text-secondary-container tabular-nums">£429/mo</span>
-                      </div>
+                    <div className="absolute bottom-3 left-3 right-3">
+                      <p className="font-headline-sm text-headline-sm text-on-primary">Audi RS3 Sportback Quattro</p>
+                      <p className="font-body-sm text-body-sm text-primary-fixed-dim">S Tronic Auto • 8,500 Miles</p>
                     </div>
                   </div>
                 </div>

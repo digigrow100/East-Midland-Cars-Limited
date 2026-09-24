@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import heroImage from "@/assets/images/metallic_blue_coupe_in_a_modern_showroom.webp";
-import peugeot3008Image from "@/assets/images/copper_metallic_suv_at_dealership.webp";
-import mercedesAClassImage from "@/assets/images/red_luxury_hatchback_in_modern_showroom.webp";
-import bmw2SeriesImage from "@/assets/images/sleek_black_convertible_showroom_display.webp";
-import bmw1SeriesImage from "@/assets/images/glossy_black_hatchback_at_dealership.webp";
-import audiTTImage from "@/assets/images/sleek_black_coupe_at_the_dealership.webp";
-import hondaCivicImage from "@/assets/images/silver_hatchback_at_the_dealership.webp";
+import heroImage from "@/assets/images/audi_rs3_green_front.webp";
+import audiRs3Image from "@/assets/images/audi_rs3_green_side_profile.webp";
+import bmwX5Image from "@/assets/images/bmw_x5_used_car.webp";
+import mercedesC63Image from "@/assets/images/mercedes_amg_c63_rear_view.webp";
+import mercedesClaImage from "@/assets/images/mercedes_cla_red_used_car.webp";
+import nissanQashqaiImage from "@/assets/images/nissan_qashqai_used_car.webp";
+import rangeRoverSportImage from "@/assets/images/range_rover_sport_used_car.webp";
+import showroomImage from "@/assets/images/audi_rs6_blue_used_car.webp";
 
 export const metadata = {
   title: "East Midland Cars Limited | Quality Used Cars Leicester",
@@ -18,94 +19,82 @@ export const metadata = {
 
 const CARS = [
   {
-    make: "peugeot",
-    body: "suv",
-    price: 13999,
+    make: "audi",
+    body: "hatchback",
     badge: "Featured Stock",
     badgeClass: "bg-secondary text-on-secondary",
-    owner: "1 Owner",
-    title: "Peugeot 3008 GT Line Premium",
-    subtitle: "1.6 PureTech GT Line Premium EAT Euro 6 (s/s) 5dr SUV (2020)",
-    specs: ["47,000 Miles", "Automatic", "Pan Roof", "180° Camera"],
-    desc: "Panoramic opening glass roof, blue interior ambient lighting, Safety Plus Pack, blind spot monitoring, full valet.",
-    monthly: "£249 / month PCP",
-    img: peugeot3008Image,
-    alt: "Peugeot 3008 GT Line Premium SUV parked on the East Midland Cars Leicester forecourt",
+    owner: "Quattro AWD",
+    title: "Audi RS3 Sportback Quattro",
+    subtitle: "2.5 TFSI Quattro S Tronic RS3 Sportback (2023)",
+    specs: ["8,500 Miles", "S Tronic Auto", "Bang & Olufsen Sound", "RS Sports Exhaust"],
+    desc: "Kyalami Green, showroom condition, full Audi service history, RS Design Package with contrast stitching.",
+    img: audiRs3Image,
+    alt: "Kyalami Green Audi RS3 Sportback Quattro parked on the East Midland Cars Leicester forecourt",
   },
   {
     make: "mercedes",
-    body: "hatchback",
-    price: 12499,
-    badge: "Low Mileage",
+    body: "saloon",
+    badge: "AMG Performance",
     badgeClass: "bg-secondary-container text-on-secondary-container",
-    owner: "4MATIC 4WD",
-    title: "Mercedes-Benz A-Class A220d",
-    subtitle: "2.1 A220d AMG Line Premium 7G-DCT 4MATIC Euro 6 5dr (2016)",
-    specs: ["61,000 Miles", "Auto 7G-DCT", "Heated Seats", "Reverse Camera"],
-    desc: "Freshly serviced, dual-zone Thermotronic climate control, parking assistance with guidelines, 2 keys included.",
-    monthly: "£224 / month HP",
-    img: mercedesAClassImage,
-    alt: "Mercedes-Benz A-Class A220d AMG Line Premium hatchback on display in Leicester",
+    owner: "AMG Exhaust",
+    title: "Mercedes-AMG C63 S Saloon",
+    subtitle: "4.0 V8 Biturbo AMG C63 S Premium Saloon (2016)",
+    specs: ["45,000 Miles", "Auto", "Alcantara Trim", "Performance Exhaust"],
+    desc: "Full AMG Performance styling, Burmester premium sound, heated front seats, comprehensive service history.",
+    img: mercedesC63Image,
+    alt: "White Mercedes-AMG C63 S saloon on display in Leicester",
   },
   {
     make: "bmw",
-    body: "convertible",
-    price: 11999,
+    body: "suv",
     badge: "Popular Model",
     badgeClass: "bg-inverse-surface text-on-primary",
-    owner: "Harman Kardon",
-    title: "BMW 2 Series 225d M Sport",
-    subtitle: "2.0 225d M Sport Auto Euro 6 (s/s) 2dr Convertible (2016)",
-    specs: ["58,070 Miles", "Diesel Auto", "Black Dakota Leather", "Heated Steering"],
-    desc: "Harman Kardon premium audio, heated front seats, satellite navigation, cruise control, 2 remote keys.",
-    monthly: "£215 / month PCP",
-    img: bmw2SeriesImage,
-    alt: "BMW 2 Series 225d M Sport convertible outside East Midland Cars Leicester",
+    owner: "M Sport",
+    title: "BMW X5 xDrive M Sport",
+    subtitle: "3.0 xDrive45e M Sport Auto SUV (2022)",
+    specs: ["18,000 Miles", "Auto", "Panoramic Sky Lounge Roof", "M Sport Package"],
+    desc: "Approved dealer vehicle, adaptive M suspension, heated & ventilated seats, full BMW service history.",
+    img: bmwX5Image,
+    alt: "Blue BMW X5 xDrive M Sport SUV outside East Midland Cars Leicester",
   },
   {
-    make: "bmw",
-    body: "hatchback",
-    price: 11999,
+    make: "land-rover",
+    body: "suv",
     badge: "Just Arrived",
     badgeClass: "bg-secondary text-on-secondary",
-    owner: "35,050 Miles",
-    title: "BMW 1 Series 118i Sport",
-    subtitle: "1.5 118i GPF Sport Euro 6 (s/s) 3dr Hatchback (2019)",
-    specs: ["35,050 Miles", "Petrol Manual", "Parking Sensors", "Cruise Control"],
-    desc: "Single-zone climate control, automatic rain sensing wipers, Bluetooth hands-free audio USB, pristine interior condition.",
-    monthly: "£215 / month HP",
-    img: bmw1SeriesImage,
-    alt: "BMW 1 Series 118i Sport hatchback for sale in Leicester",
+    owner: "Dynamic Pack",
+    title: "Range Rover Sport Autobiography Dynamic",
+    subtitle: "3.0 SDV6 Autobiography Dynamic Auto SUV (2016)",
+    specs: ["68,000 Miles", "Diesel Auto", "22\" Alloys", "Panoramic Roof"],
+    desc: "Autobiography Dynamic specification, adaptive air suspension, heated & cooled leather seats, tow bar fitted.",
+    img: rangeRoverSportImage,
+    alt: "Black Range Rover Sport Autobiography Dynamic SUV for sale in Leicester",
   },
   {
-    make: "audi",
+    make: "mercedes",
     body: "coupe",
-    price: 8499,
     badge: "Sports Coupe",
     badgeClass: "bg-primary-container text-on-primary",
-    owner: "BOSE Sound",
-    title: "Audi TT Black Edition Coupe",
-    subtitle: "2.0 TFSI Black Edition S Tronic Quattro (2012)",
-    specs: ["78,000 Miles", "S Tronic Auto", "Heated Seats", "Fresh Gearbox Service"],
-    desc: "Freshly serviced transmission & engine, heated sports leather, BOSE surround audio, electronic rear spoiler.",
-    monthly: "£165 / month PCP",
-    img: audiTTImage,
-    alt: "Audi TT Black Edition Coupe for sale at East Midland Cars Leicester",
+    owner: "AMG Line",
+    title: "Mercedes-Benz CLA AMG Line",
+    subtitle: "2.0 CLA220 AMG Line Auto Coupe (2019)",
+    specs: ["32,000 Miles", "Auto", "Tan Leather Interior", "AMG Styling Pack"],
+    desc: "AMG Line specification, ambient interior lighting, reversing camera, full Mercedes-Benz service history.",
+    img: mercedesClaImage,
+    alt: "Red Mercedes-Benz CLA AMG Line coupe for sale at East Midland Cars Leicester",
   },
   {
-    make: "honda",
-    body: "hatchback",
-    price: 9999,
-    badge: "First Car Pick",
+    make: "nissan",
+    body: "suv",
+    badge: "Low Mileage",
     badgeClass: "bg-secondary-fixed text-on-secondary-fixed-variant",
-    owner: "Ultra Low Miles",
-    title: "Honda Civic i-VTEC S",
-    subtitle: "1.4 i-VTEC S Euro 6 (s/s) 5dr Hatchback (2016)",
-    specs: ["18,732 Miles (Rare)", "Petrol", "Bluetooth Audio", "Magic Seats"],
-    desc: "Unbelievable low mileage, passed clear vehicle history check, 3-month comprehensive warranty, economical running costs.",
-    monthly: "£185 / month HP",
-    img: hondaCivicImage,
-    alt: "Honda Civic i-VTEC S hatchback with low mileage for sale in Leicester",
+    owner: "Approved Dealer",
+    title: "Nissan Qashqai N-Connecta",
+    subtitle: "1.3 DiG-T N-Connecta Xtronic SUV (2021)",
+    specs: ["24,000 Miles", "Xtronic Auto", "Apple CarPlay", "Reverse Camera"],
+    desc: "Low mileage family SUV, passed clear vehicle history check, 3-month comprehensive warranty included.",
+    img: nissanQashqaiImage,
+    alt: "Grey Nissan Qashqai N-Connecta SUV with low mileage for sale in Leicester",
   },
 ];
 
@@ -134,22 +123,22 @@ const PILLARS = [
 
 const REVIEWS = [
   {
-    title: '"Traveled from Nottingham for an Audi TT"',
+    title: '"Traveled from Nottingham for an Audi RS3"',
     body: "Absolutely exceptional service, no pushy tactics, and the car was immaculate. The staff explained the service records in complete detail and arranged an extended warranty smoothly. Highly recommend!",
     author: "Arnold M.",
-    meta: "Verified Buyer • Audi TT Coupe",
+    meta: "Verified Buyer • Audi RS3 Sportback",
   },
   {
     title: '"Finance Arranged Within an Hour"',
     body: "Helped me arrange finance through Finset within an hour. Professional, polite, and reassuring from start to finish. Everything was transparent with no sudden fees. First-class customer service.",
     author: "Charlotte C.",
-    meta: "Verified Buyer • Mercedes-Benz A Class",
+    meta: "Verified Buyer • Mercedes-AMG C63",
   },
   {
-    title: "\"Daughter's First Car - Outstanding Trust\"",
-    body: "Purchased my daughter's first car here. Trustworthy dealer with clear history check, 3-month warranty, and zero sales pressure. Lina and the team went above and beyond to make her feel confident.",
+    title: '"Family SUV - Outstanding Trust"',
+    body: "Purchased a reliable family SUV here. Trustworthy dealer with clear history check, 3-month warranty, and zero sales pressure. The team went above and beyond to make us feel confident.",
     author: "Peter R.",
-    meta: "Verified Buyer • Honda Civic",
+    meta: "Verified Buyer • Nissan Qashqai",
   },
 ];
 
@@ -233,7 +222,7 @@ export default function Home() {
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-inverse-surface group">
                     <Image
                       src={heroImage}
-                      alt="East Midland Cars performance showcase Audi RS/S-Line Quattro coupe"
+                      alt="Kyalami Green Audi RS3 Sportback Quattro at the East Midland Cars Leicester showroom"
                       width={640}
                       height={440}
                       priority
@@ -248,24 +237,16 @@ export default function Home() {
                         <span className="w-2 h-2 rounded-full bg-emerald-400" /> Available Today
                       </span>
                     </div>
-                    <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-primary-container/90 backdrop-blur-md shadow-lg flex items-center justify-between">
-                      <div>
-                        <p className="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">
-                          Handpicked Performance Series
-                        </p>
-                        <h2 className="font-headline-sm text-headline-sm text-on-primary font-bold">
-                          Audi RS / S-Line Quattro Range
-                        </h2>
-                        <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim">
-                          Euro 6 • Verified Provenance • Low Mileage
-                        </p>
-                      </div>
-                      <div className="text-right">
-                        <p className="font-label-sm text-label-sm text-primary-fixed-dim">From</p>
-                        <p className="font-headline-md text-headline-md text-secondary-container font-bold tabular-nums">
-                          £215/mo
-                        </p>
-                      </div>
+                    <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-primary-container/90 backdrop-blur-md shadow-lg">
+                      <p className="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">
+                        Handpicked Performance Series
+                      </p>
+                      <h2 className="font-headline-sm text-headline-sm text-on-primary font-bold">
+                        Audi RS3 Sportback Quattro
+                      </h2>
+                      <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim">
+                        Euro 6 • Verified Provenance • Low Mileage
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -287,7 +268,7 @@ export default function Home() {
                   Unit 38 Oswin Road • Showing 45 Ready to Drive Cars
                 </span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm pt-space-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-xs">
                 <div>
                   <label className="block font-label-sm text-label-sm text-primary-fixed-dim uppercase mb-1">Make</label>
                   <div className="relative">
@@ -317,20 +298,6 @@ export default function Home() {
                       <option>TT Coupe</option>
                       <option>Civic i-VTEC</option>
                       <option>Discovery 4 HSE</option>
-                    </select>
-                    <span className="material-symbols-outlined absolute right-2.5 top-3 text-[18px] text-primary-fixed-dim pointer-events-none">expand_more</span>
-                  </div>
-                </div>
-                <div>
-                  <label className="block font-label-sm text-label-sm text-primary-fixed-dim uppercase mb-1">Max Cash Price</label>
-                  <div className="relative">
-                    <select className="w-full bg-inverse-surface text-on-primary font-body-sm text-body-sm rounded-lg px-3 py-2.5 appearance-none focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer">
-                      <option>No Max Budget</option>
-                      <option>Up to £8,000</option>
-                      <option>Up to £10,000</option>
-                      <option>Up to £12,000</option>
-                      <option>Up to £15,000</option>
-                      <option>Up to £18,000</option>
                     </select>
                     <span className="material-symbols-outlined absolute right-2.5 top-3 text-[18px] text-primary-fixed-dim pointer-events-none">expand_more</span>
                   </div>
@@ -442,13 +409,7 @@ export default function Home() {
                       </div>
                       <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">{car.desc}</p>
                     </div>
-                    <div className="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
-                      <div>
-                        <p className="font-headline-md text-headline-md font-bold text-on-surface tabular-nums">
-                          £{car.price.toLocaleString()}
-                        </p>
-                        <p className="font-label-sm text-label-sm text-secondary font-bold">From {car.monthly}</p>
-                      </div>
+                    <div className="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-end">
                       <a
                         href="tel:01162898888"
                         className="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-secondary transition-colors font-label-md text-label-md font-semibold inline-flex items-center gap-1"
@@ -781,8 +742,8 @@ export default function Home() {
                 </div>
                 <div className="lg:col-span-6 relative min-h-[380px] lg:min-h-full bg-surface-container">
                   <Image
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqi89duMwnybznZRJxIwGSdVt2Q4Yi3knEOPE1ZvGhnjr6HXUpAwVCXY-gOR4Tr_6i9TI-_KAG4o09GXkgr1e3uflg03cUlkX1c8wPD43kWwAT3MqJRwbAxI_3aDviDfkxGBe7STSqRxWdzT1UNqVW5e_d4iiXbcgPC8nBgZB2yjWveTMMsmliipQ7UC8NJd9blh2AOHnJ4Z2py54hXt7SXinQHBe4-X3BZrmal7cx"
-                    alt="Stylized architectural map view showing Oswin Road Leicester automotive district with pin on East Midland Cars Limited showroom with surrounding Midlands road transport links"
+                    src={showroomImage}
+                    alt="Blue Audi RS6 Avant Quattro parked inside the East Midland Cars Leicester showroom"
                     width={700}
                     height={480}
                     className="w-full h-full min-h-[380px] object-cover"

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
-import heroImage from "@/assets/images/golden_hour_dealership_confidence.webp";
+import heroImage from "@/assets/images/volkswagen_golf_r_blue_used_car.webp";
 
 export const metadata = {
   title: "Contact Us / Visit | East Midland Cars Limited",
@@ -77,7 +77,7 @@ export default function ContactUsVisitPage() {
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl h-72 lg:h-80 w-full">
                     <Image
                       src={heroImage}
-                      alt="East Midland Cars Leicester showroom forecourt lit at golden hour with a handpicked selection of vehicles on display"
+                      alt="Blue Volkswagen Golf R hatchback in the East Midland Cars Leicester showroom"
                       fill
                       priority
                       className="object-cover"

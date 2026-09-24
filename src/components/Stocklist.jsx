@@ -2,146 +2,160 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import peugeot3008Image from "@/assets/images/copper_metallic_suv_at_dealership.webp";
-import mercedesAClassImage from "@/assets/images/red_luxury_hatchback_in_modern_showroom.webp";
-import bmw2SeriesImage from "@/assets/images/sleek_black_convertible_showroom_display.webp";
-import bmw1SeriesImage from "@/assets/images/glossy_black_hatchback_at_dealership.webp";
-import audiTTImage from "@/assets/images/sleek_black_coupe_at_the_dealership.webp";
-import hondaCivicImage from "@/assets/images/silver_hatchback_at_the_dealership.webp";
+import audiRs3Image from "@/assets/images/audi_rs3_green_side_profile.webp";
+import audiRs6Image from "@/assets/images/audi_rs6_blue_used_car.webp";
+import bmwX5Image from "@/assets/images/bmw_x5_used_car.webp";
+import mercedesC63Image from "@/assets/images/mercedes_amg_c63_rear_view.webp";
+import mercedesClaImage from "@/assets/images/mercedes_cla_red_used_car.webp";
+import nissanQashqaiImage from "@/assets/images/nissan_qashqai_used_car.webp";
+import rangeRoverSportImage from "@/assets/images/range_rover_sport_used_car.webp";
+import volkswagenGolfRImage from "@/assets/images/volkswagen_golf_r_blue_used_car.webp";
 
 const BODY_TYPES = [
-  { value: "all", label: "All Bodies", count: 45 },
-  { value: "hatchback", label: "Hatchback", count: 24 },
-  { value: "suv", label: "SUV", count: 20 },
-  { value: "estate", label: "Estate", count: 5 },
-  { value: "coupe", label: "Coupe", count: 3 },
-  { value: "convertible", label: "Convertible", count: 2 },
-  { value: "saloon", label: "Saloon", count: 2 },
+  { value: "all", label: "All Bodies", count: 8 },
+  { value: "hatchback", label: "Hatchback", count: 2 },
+  { value: "suv", label: "SUV", count: 3 },
+  { value: "estate", label: "Estate", count: 1 },
+  { value: "coupe", label: "Coupe", count: 1 },
+  { value: "saloon", label: "Saloon", count: 1 },
 ];
 
 const MAKES = [
-  { value: "all", label: "All Makes (45)" },
-  { value: "bmw", label: "BMW (11)" },
-  { value: "mercedes", label: "Mercedes-Benz (9)" },
-  { value: "audi", label: "Audi (8)" },
-  { value: "peugeot", label: "Peugeot (5)" },
-  { value: "volkswagen", label: "Volkswagen (4)" },
-  { value: "honda", label: "Honda (3)" },
-  { value: "land-rover", label: "Land Rover (2)" },
-  { value: "nissan", label: "Nissan (2)" },
-  { value: "skoda", label: "Skoda (1)" },
+  { value: "all", label: "All Makes (8)" },
+  { value: "audi", label: "Audi (2)" },
+  { value: "bmw", label: "BMW (1)" },
+  { value: "mercedes", label: "Mercedes-Benz (2)" },
+  { value: "nissan", label: "Nissan (1)" },
+  { value: "land-rover", label: "Land Rover (1)" },
+  { value: "volkswagen", label: "Volkswagen (1)" },
 ];
 
 const CARS = [
   {
-    make: "peugeot",
-    body: "suv",
-    price: 13999,
-    monthly: 249,
-    year: "2020 (69 REG)",
-    trim: "GT LINE PREMIUM",
-    title: "Peugeot 3008 1.2 PureTech",
-    subtitle: "Pan Roof • 180° Camera • Focal Sound • Half Leather",
-    mileage: "47,000 mi",
-    gearbox: "Auto",
-    fuel: "Petrol",
-    photos: 28,
-    badges: ["Just Arrived", "1 Owner"],
-    img: peugeot3008Image,
-    alt: "2020 bronze copper metallic Peugeot 3008 GT Line Premium SUV on the East Midland Cars Leicester forecourt",
-  },
-  {
-    make: "mercedes",
+    make: "audi",
     body: "hatchback",
-    price: 12499,
-    monthly: 226,
-    year: "2016 (66 REG)",
-    trim: "AMG LINE PREM",
-    title: "Mercedes-Benz A-Class A220d",
-    subtitle: "Heated Seats • Reverse Camera • Night Package",
-    mileage: "61,200 mi",
-    gearbox: "Auto",
-    fuel: "Diesel",
-    photos: 34,
-    badges: ["4MATIC AWD"],
-    img: mercedesAClassImage,
-    alt: "Bright red Mercedes Benz A Class A220d AMG Line hatchback under East Midland Cars showroom lighting",
-  },
-  {
-    make: "bmw",
-    body: "convertible",
-    price: 11999,
-    monthly: 215,
-    year: "2016 (66 REG)",
-    trim: "CONVERTIBLE",
-    title: "BMW 2 Series 225d M Sport",
-    subtitle: "Dakota Leather • Pro Nav • Heated Steering Wheel",
-    mileage: "58,400 mi",
-    gearbox: "Auto",
-    fuel: "Diesel",
-    photos: 42,
-    badges: ["M Sport", "Harman Kardon"],
-    img: bmw2SeriesImage,
-    alt: "Metallic sapphire black BMW 2 Series 225d M Sport Convertible with the top down outside a British showroom",
-  },
-  {
-    make: "bmw",
-    body: "hatchback",
-    price: 11999,
-    monthly: 215,
-    year: "2019 (19 REG)",
-    trim: "118i SPORT",
-    title: "BMW 1 Series 118i Sport Hatch",
-    subtitle: "Parking Sensors • Cruise Control • DAB Radio • iDrive",
-    mileage: "35,000 mi",
-    gearbox: "Manual",
+    year: "2023 (23 REG)",
+    trim: "RS3 QUATTRO",
+    title: "Audi RS3 Sportback Quattro",
+    subtitle: "Kyalami Green • RS Sports Exhaust • Bang & Olufsen Sound",
+    mileage: "8,500 mi",
+    gearbox: "S Tronic",
     fuel: "Petrol",
-    photos: 26,
-    badges: ["Low Mileage"],
-    img: bmw1SeriesImage,
-    alt: "BMW 1 Series 118i Sport hatchback in East Midland Cars Leicester stock",
+    photos: 6,
+    badges: ["Showroom Condition", "Quattro AWD"],
+    img: audiRs3Image,
+    alt: "Kyalami Green Audi RS3 Sportback Quattro parked in the East Midland Cars Leicester showroom",
   },
   {
     make: "audi",
-    body: "coupe",
-    price: 8499,
-    monthly: 165,
-    year: "2012 (12 REG)",
-    trim: "BLACK EDITION",
-    title: "Audi TT 2.0 TFSI Coupe",
-    subtitle: "BOSE Premium Sound • Rotor 19\" Alloys • Xenons",
-    mileage: "78,000 mi",
-    gearbox: "S Tronic",
+    body: "estate",
+    year: "2016 (16 REG)",
+    trim: "RS6 AVANT",
+    title: "Audi RS6 Avant Quattro",
+    subtitle: "Panoramic Roof • Tan Leather Interior • Full Service History",
+    mileage: "52,000 mi",
+    gearbox: "Tiptronic",
     fuel: "Petrol",
-    photos: 30,
-    badges: ["Quattro 4WD"],
-    img: audiTTImage,
-    alt: "Audi TT Black Edition Coupe with Quattro 4WD badge on East Midland Cars forecourt",
+    photos: 1,
+    badges: ["Quattro AWD"],
+    img: audiRs6Image,
+    alt: "Blue Audi RS6 Avant Quattro estate in the East Midland Cars Leicester showroom",
   },
   {
-    make: "honda",
-    body: "hatchback",
-    price: 7999,
-    monthly: 149,
-    year: "2016 (16 REG)",
-    trim: "i-VTEC S",
-    title: "Honda Civic 1.4 i-VTEC S",
-    subtitle: "Blind Spot Assist • Bluetooth Audio • Magic Seats",
-    mileage: "18,732 mi",
-    gearbox: "Manual",
+    make: "bmw",
+    body: "suv",
+    year: "2022 (72 REG)",
+    trim: "X5 M SPORT",
+    title: "BMW X5 xDrive M Sport",
+    subtitle: "Panoramic Sky Lounge Roof • M Sport Package • Approved Dealer",
+    mileage: "18,000 mi",
+    gearbox: "Auto",
     fuel: "Petrol",
-    photos: 22,
-    badges: ["Only 18k Miles"],
-    img: hondaCivicImage,
-    alt: "Honda Civic 1.4 i-VTEC S hatchback with ultra low mileage at East Midland Cars Leicester",
+    photos: 1,
+    badges: ["M Sport"],
+    img: bmwX5Image,
+    alt: "Blue BMW X5 M Sport SUV in the East Midland Cars Leicester showroom",
+  },
+  {
+    make: "mercedes",
+    body: "saloon",
+    year: "2016 (16 REG)",
+    trim: "AMG C63 S",
+    title: "Mercedes-AMG C63 S Saloon",
+    subtitle: "AMG Performance Exhaust • Alcantara Trim • Approved Dealer",
+    mileage: "45,000 mi",
+    gearbox: "Auto",
+    fuel: "Petrol",
+    photos: 2,
+    badges: ["AMG Performance"],
+    img: mercedesC63Image,
+    alt: "White Mercedes-AMG C63 S saloon in the East Midland Cars Leicester showroom",
+  },
+  {
+    make: "mercedes",
+    body: "coupe",
+    year: "2019 (69 REG)",
+    trim: "CLA AMG LINE",
+    title: "Mercedes-Benz CLA AMG Line",
+    subtitle: "AMG Styling Pack • Tan Leather Interior • Approved Dealer",
+    mileage: "32,000 mi",
+    gearbox: "Auto",
+    fuel: "Petrol",
+    photos: 1,
+    badges: ["AMG Line"],
+    img: mercedesClaImage,
+    alt: "Red Mercedes-Benz CLA AMG Line coupe in the East Midland Cars Leicester showroom",
+  },
+  {
+    make: "nissan",
+    body: "suv",
+    year: "2021 (71 REG)",
+    trim: "N-CONNECTA",
+    title: "Nissan Qashqai N-Connecta",
+    subtitle: "Reverse Camera • Apple CarPlay • Approved Dealer",
+    mileage: "24,000 mi",
+    gearbox: "Auto",
+    fuel: "Petrol",
+    photos: 1,
+    badges: ["Low Mileage"],
+    img: nissanQashqaiImage,
+    alt: "Grey Nissan Qashqai N-Connecta SUV in the East Midland Cars Leicester showroom",
+  },
+  {
+    make: "land-rover",
+    body: "suv",
+    year: "2016 (16 REG)",
+    trim: "AUTOBIOGRAPHY DYNAMIC",
+    title: "Range Rover Sport Autobiography Dynamic",
+    subtitle: "Panoramic Roof • 22\" Alloys • Approved Dealer",
+    mileage: "68,000 mi",
+    gearbox: "Auto",
+    fuel: "Diesel",
+    photos: 1,
+    badges: ["Dynamic Pack"],
+    img: rangeRoverSportImage,
+    alt: "Black Range Rover Sport Autobiography Dynamic SUV in the East Midland Cars Leicester showroom",
+  },
+  {
+    make: "volkswagen",
+    body: "hatchback",
+    year: "2015 (64 REG)",
+    trim: "GOLF R",
+    title: "Volkswagen Golf R",
+    subtitle: "4MOTION AWD • DCC Adaptive Chassis • Approved Dealer",
+    mileage: "54,000 mi",
+    gearbox: "DSG Auto",
+    fuel: "Petrol",
+    photos: 1,
+    badges: ["4MOTION AWD"],
+    img: volkswagenGolfRImage,
+    alt: "Blue Volkswagen Golf R hatchback in the East Midland Cars Leicester showroom",
   },
 ];
 
 export default function Stocklist() {
   const [bodyType, setBodyType] = useState("all");
   const [make, setMake] = useState("all");
-  const [maxPrice, setMaxPrice] = useState(25000);
-  const [maxMonthly, setMaxMonthly] = useState(450);
   const [keyword, setKeyword] = useState("");
   const [ulezOnly, setUlezOnly] = useState(true);
 
@@ -149,8 +163,6 @@ export default function Stocklist() {
     return CARS.filter((car) => {
       if (bodyType !== "all" && car.body !== bodyType) return false;
       if (make !== "all" && car.make !== make) return false;
-      if (car.price > maxPrice) return false;
-      if (car.monthly > maxMonthly) return false;
       if (keyword && !`${car.title} ${car.subtitle} ${car.trim}`.toLowerCase().includes(keyword.toLowerCase())) {
         return false;
       }
@@ -159,13 +171,11 @@ export default function Stocklist() {
     // ULEZ toggle is visual only in this dataset: every current car is
     // ULEZ compliant, so it never removes results — real inventory data
     // would need a per-vehicle ULEZ flag to filter on.
-  }, [bodyType, make, maxPrice, maxMonthly, keyword]);
+  }, [bodyType, make, keyword]);
 
   function resetFilters() {
     setBodyType("all");
     setMake("all");
-    setMaxPrice(25000);
-    setMaxMonthly(450);
     setKeyword("");
     setUlezOnly(true);
   }
@@ -244,48 +254,6 @@ export default function Stocklist() {
                 </option>
               ))}
             </select>
-          </div>
-
-          <div className="space-y-2 pt-2">
-            <div className="flex items-center justify-between font-label-sm text-label-sm">
-              <span className="text-on-surface-variant uppercase font-semibold">Cash Budget</span>
-              <span className="text-secondary font-bold">Up to £{maxPrice.toLocaleString()}</span>
-            </div>
-            <input
-              type="range"
-              min={5000}
-              max={25000}
-              step={500}
-              value={maxPrice}
-              onChange={(e) => setMaxPrice(Number(e.target.value))}
-              className="w-full accent-secondary bg-surface-container-high rounded h-1.5 cursor-pointer"
-            />
-            <div className="flex justify-between font-legal-fineprint text-legal-fineprint text-outline">
-              <span>£5,000</span>
-              <span>£15,000</span>
-              <span>£25,000+</span>
-            </div>
-          </div>
-
-          <div className="space-y-2 pt-1">
-            <div className="flex items-center justify-between font-label-sm text-label-sm">
-              <span className="text-on-surface-variant uppercase font-semibold">Monthly Finance</span>
-              <span className="text-secondary font-bold">Up to £{maxMonthly}/mo</span>
-            </div>
-            <input
-              type="range"
-              min={150}
-              max={450}
-              step={10}
-              value={maxMonthly}
-              onChange={(e) => setMaxMonthly(Number(e.target.value))}
-              className="w-full accent-secondary bg-surface-container-high rounded h-1.5 cursor-pointer"
-            />
-            <div className="flex justify-between font-legal-fineprint text-legal-fineprint text-outline">
-              <span>£150/mo</span>
-              <span>£300/mo</span>
-              <span>£450/mo+</span>
-            </div>
           </div>
 
           <div className="space-y-1 pt-1">
@@ -438,23 +406,9 @@ export default function Stocklist() {
                       <span className="material-symbols-outlined text-[14px] text-outline">verified</span> RAC Inspected
                     </span>
                   </div>
-                  <div className="pt-space-xs flex items-baseline justify-between bg-surface-container-low/70 p-2.5 rounded-lg">
-                    <div>
-                      <p className="font-headline-md text-headline-md text-on-surface font-bold tabular-nums">
-                        £{car.price.toLocaleString()}
-                      </p>
-                      <p className="font-legal-fineprint text-legal-fineprint text-outline">Fair Market Valuation</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="font-headline-sm text-headline-sm text-secondary font-bold tabular-nums">
-                        £{car.monthly} <span className="font-label-sm text-label-sm font-normal text-on-surface-variant">/mo</span>
-                      </p>
-                      <p className="font-legal-fineprint text-legal-fineprint text-secondary font-semibold">9.9% APR Rep</p>
-                    </div>
-                  </div>
                   <div className="grid grid-cols-2 gap-space-xs pt-1">
                     <a href="tel:01162898888" className="w-full py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors text-center">
-                      Reserve £99
+                      Enquire Now
                     </a>
                     <a href="tel:01162898888" className="w-full py-2 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-sm text-label-sm font-semibold transition-colors text-center">
                       View Vehicle
