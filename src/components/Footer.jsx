@@ -101,6 +101,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <a
+                  className="hover:text-on-primary transition-colors"
+                  href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Stock on AutoTrader
+                </a>
+              </li>
+              <li>
                 <Link className="hover:text-on-primary transition-colors" href="/finance-calculator">
                   Finance &amp; Calculator
                 </Link>
@@ -108,16 +118,6 @@ export default function Footer() {
               <li>
                 <Link className="hover:text-on-primary transition-colors" href="/warranty-rac">
                   Warranty &amp; RAC
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-on-primary transition-colors" href="/sell-your-car">
-                  Sell Your Car
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-on-primary transition-colors" href="/request-a-car">
-                  Request a Car
                 </Link>
               </li>
             </ul>
@@ -131,11 +131,6 @@ export default function Footer() {
               <li>
                 <Link className="hover:text-on-primary transition-colors" href="/finance-calculator">
                   PCP &amp; HP Finance Calculator
-                </Link>
-              </li>
-              <li>
-                <Link className="hover:text-on-primary transition-colors" href="/sell-your-car">
-                  Free Part Exchange Valuation
                 </Link>
               </li>
               <li>

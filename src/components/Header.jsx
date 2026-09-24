@@ -10,8 +10,6 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/showroom-stocklist", label: "Stocklist" },
   { href: "/finance-calculator", label: "Finance" },
-  { href: "/sell-your-car", label: "Sell Your Car" },
-  { href: "/request-a-car", label: "Request a Car" },
   { href: "/warranty-rac", label: "Warranty & RAC" },
   { href: "/customer-reviews", label: "Customer Reviews" },
   { href: "/contact-us-visit", label: "Contact Us" },
@@ -57,6 +55,14 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-space-sm">
+          <a
+            href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden lg:inline-flex items-center px-3 py-2.5 rounded-lg border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-all whitespace-nowrap"
+          >
+            View on AutoTrader
+          </a>
           <Link
             href="/showroom-stocklist"
             className="hidden md:inline-flex items-center px-4 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container hover:text-on-secondary transition-all shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
@@ -115,6 +121,15 @@ export default function Header() {
             })}
           </nav>
           <div className="p-space-md pt-0 flex flex-col gap-space-sm">
+            <a
+              href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="inline-flex items-center justify-center px-4 py-3 rounded-lg border border-outline-variant text-on-surface-variant font-label-md text-label-md min-h-[44px]"
+            >
+              View on AutoTrader
+            </a>
             <Link
               href="/showroom-stocklist"
               onClick={() => setMenuOpen(false)}

@@ -185,19 +185,31 @@ export default function Home() {
                   </div>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
                     {[
-                      { icon: "star", label: "4.8 / 5", sub: "AutoTrader & Google" },
+                      {
+                        icon: "star",
+                        label: "4.8 / 5",
+                        sub: "AutoTrader & Google",
+                        href: "https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803",
+                      },
                       { icon: "verified_user", label: "HPI Clear", sub: "100% History Verified" },
                       { icon: "account_balance", label: "Finset", sub: "FCA FRN 1058774 Partner" },
                       { icon: "shield", label: "3M Warranty", sub: "Extendable to 36 Months" },
-                    ].map((b) => (
-                      <div key={b.label} className="p-3 rounded-lg bg-surface-container-high/10 backdrop-blur-sm">
-                        <div className="flex items-center gap-1.5 text-secondary-container font-headline-sm text-headline-sm">
-                          <span className="material-symbols-outlined text-[20px]">{b.icon}</span>
-                          <span className="font-bold">{b.label}</span>
-                        </div>
-                        <p className="font-label-sm text-label-sm text-primary-fixed-dim mt-0.5">{b.sub}</p>
-                      </div>
-                    ))}
+                    ].map((b) => {
+                      const Tag = b.href ? "a" : "div";
+                      return (
+                        <Tag
+                          key={b.label}
+                          {...(b.href ? { href: b.href, target: "_blank", rel: "noopener noreferrer" } : {})}
+                          className="p-3 rounded-lg bg-surface-container-high/10 backdrop-blur-sm hover:bg-surface-container-high/20 transition-colors"
+                        >
+                          <div className="flex items-center gap-1.5 text-secondary-container font-headline-sm text-headline-sm">
+                            <span className="material-symbols-outlined text-[20px]">{b.icon}</span>
+                            <span className="font-bold">{b.label}</span>
+                          </div>
+                          <p className="font-label-sm text-label-sm text-primary-fixed-dim mt-0.5">{b.sub}</p>
+                        </Tag>
+                      );
+                    })}
                   </div>
                   <div className="flex flex-wrap items-center gap-space-md pt-space-xs">
                     <a
@@ -464,7 +476,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-space-sm w-full md:w-auto">
                 <Link
-                  href="/request-a-car"
+                  href="/contact-us-visit"
                   className="w-full md:w-auto text-center px-5 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors shadow-sm"
                 >
                   Request Specific Vehicle
