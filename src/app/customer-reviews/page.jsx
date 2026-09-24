@@ -75,7 +75,7 @@ export default function CustomerReviewsPage() {
                     certified provenance, and genuine handover experiences at Unit 38 Oswin Road.
                   </p>
                 </div>
-                <div className="flex items-center gap-space-lg bg-inverse-surface/80 p-space-md rounded-xl backdrop-blur-md shadow-xl self-start lg:self-auto">
+                <div className="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-lg bg-inverse-surface/80 p-space-md rounded-xl backdrop-blur-md shadow-xl w-full sm:w-auto self-start lg:self-auto">
                   <div className="flex flex-col items-center justify-center pr-space-md bg-surface-container-high/5 rounded-lg py-2 px-3">
                     <span className="font-display-hero text-display-hero-mobile text-on-primary leading-none">4.8</span>
                     <div className="flex items-center text-amber-400 mt-1">
@@ -86,15 +86,15 @@ export default function CustomerReviewsPage() {
                     </div>
                     <span className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim mt-1">Out of 5.0 Stars</span>
                   </div>
-                  <div className="space-y-1">
-                    <div className="flex items-center gap-space-xs font-label-md text-label-md text-on-primary">
-                      <span className="w-2 h-2 rounded-full bg-emerald-400" />
+                  <div className="space-y-1 min-w-0 text-center sm:text-left">
+                    <div className="flex items-center justify-center sm:justify-start gap-space-xs font-label-md text-label-md text-on-primary">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
                       82 Verified Handovers
                     </div>
                     <p className="font-body-sm text-body-sm text-primary-fixed-dim">
                       100% Recommendation rate for vehicle accuracy &amp; zero hidden fees.
                     </p>
-                    <div className="flex items-center gap-space-xs text-secondary-fixed font-label-sm text-label-sm pt-1">
+                    <div className="flex items-center justify-center sm:justify-start gap-space-xs text-secondary-fixed font-label-sm text-label-sm pt-1">
                       <span className="material-symbols-outlined text-[16px]">verified_user</span>
                       FCA Approved Reference #1058774
                     </div>
