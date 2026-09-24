@@ -69,17 +69,12 @@ export default function Footer() {
               across the Midlands and the UK.
             </p>
             <div className="pt-space-xs font-body-sm text-body-sm text-inverse-on-surface space-y-1">
-              <a
-                className="flex items-center gap-space-xs hover:text-on-primary transition-colors"
-                href="https://maps.google.com/?q=Unit+38+Oswin+Road+Leicester+LE3+1HR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <p className="flex items-center gap-space-xs">
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
                   location_on
                 </span>
                 Unit 38 Oswin Road, Leicester, LE3 1HR
-              </a>
+              </p>
               <p className="flex items-center gap-space-xs">
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
                   call
