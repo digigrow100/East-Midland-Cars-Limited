@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Accordion from "@/components/Accordion";
@@ -35,29 +36,24 @@ const WHY_FINANCE_WITH_US = [
 
 const FAQ_ITEMS = [
   {
-    question: "Can I settle my finance agreement early?",
+    question: "Who provides the vehicle finance?",
     answer:
-      "Yes, under the Consumer Credit Act 1974, you hold the statutory right to request an early settlement figure from the lender at any point during your term. Early settlement often reduces the total interest payable over the remainder of the loan.",
+      "East Midland Cars Limited can introduce you to Finset Limited. Finset Limited acts as a credit broker, not a lender, and works with a specific panel of lenders.",
   },
   {
-    question: "What if I have poor, bad, or no credit history?",
+    question: "Can East Midland Cars advise me which finance product to choose?",
     answer:
-      "Through our broker partnership with Finset Limited, we work with a dedicated panel of specialist sub-prime lenders who focus on your current affordability rather than historic financial missed payments or low credit scores. A soft credit pre-check will determine your options without risk.",
+      "No. East Midland Cars Limited does not provide financial advice or recommendations. We are only permitted to introduce you to Finset Limited.",
   },
   {
-    question: "Can I use my existing vehicle part-exchange as the deposit?",
+    question: "Who should I contact about my finance application?",
     answer:
-      "Absolutely. We offer free, accurate market valuations on any make or model. If your part-exchange vehicle has existing finance remaining, we can settle the outstanding balance directly with your lender and apply any remaining positive equity toward your new car's deposit.",
+      "Questions regarding your finance application, available finance products or acceptance should be directed to Finset Limited.",
   },
   {
-    question: "Will applying online affect my credit file?",
+    question: "Do East Midland Cars or Finset charge a fee for their services?",
     answer:
-      "Our initial eligibility assessment utilizes a soft search. This leaves a neutral footprint visible only to you on your credit report. A full hard search is only recorded after you have reviewed your formal approval quote and explicitly opted to sign the formal agreement.",
-  },
-  {
-    question: "What documents will I need to bring for handover?",
-    answer:
-      "Generally, you will require a valid Full UK or EU Driving Licence, proof of current address (utility bill or bank statement within 90 days), and proof of income (such as recent payslips or bank statements). Our team will provide an exact tailored checklist upon pre-approval.",
+      "East Midland Cars Limited and Finset Limited do not charge you a fee for their services. However, the lender may charge interest or fees as part of your finance agreement. These will be set out in the documentation provided by the lender.",
   },
 ];
 
@@ -240,66 +236,39 @@ export default function FinanceCalculatorPage() {
             </div>
           </section>
 
-          {/* HP vs PCP comparison */}
+          {/* Vehicle finance options */}
           <section className="w-full py-space-2xl px-margin-mobile lg:px-margin-desktop bg-surface">
             <div className="max-w-[1320px] mx-auto">
-              <div className="max-w-2xl mb-space-xl">
+              <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase mb-space-xs">
                   <span className="material-symbols-outlined text-[16px] text-secondary">compare_arrows</span>
-                  Package Breakdown
+                  Finance Options
                 </div>
-                <h2 className="font-headline-xl text-headline-xl text-on-surface">PCP vs HP: Selecting Your Finance Path</h2>
+                <h2 className="font-headline-xl text-headline-xl text-on-surface">Vehicle Finance Options</h2>
                 <p className="font-body-md text-body-md text-on-surface-variant pt-2">
-                  Compare key features between Personal Contract Purchase and Hire Purchase to
-                  choose the solution aligned with your ownership intentions.
+                  We can introduce you to Finset Limited, who may be able to help you finance your
+                  vehicle through their panel of lenders.
                 </p>
-              </div>
-              <div className="overflow-x-auto">
-                <div className="min-w-[720px] bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden">
-                  <div className="grid grid-cols-12 bg-primary-container text-on-primary p-space-md font-headline-sm text-headline-sm">
-                    <div className="col-span-4 text-primary-fixed-dim">Core Characteristic</div>
-                    <div className="col-span-4 text-secondary-fixed">Personal Contract Purchase (PCP)</div>
-                    <div className="col-span-4 text-on-primary">Hire Purchase (HP)</div>
-                  </div>
-                  {[
-                    {
-                      label: "Vehicle Ownership",
-                      pcp: "Optional at term end. You can hand the vehicle back, part-exchange, or pay the final Guaranteed Future Value (GFV) balloon.",
-                      hp: "Guaranteed ownership. Once all payments plus the nominal option-to-purchase fee are settled, the vehicle is 100% yours.",
-                    },
-                    {
-                      label: "Monthly Payments",
-                      pcp: "Significantly Lower because repayment covers the vehicle depreciation during the term rather than the total cash value.",
-                      hp: "Higher monthly installments because the entire balance of the vehicle is amortized across the chosen loan duration.",
-                    },
-                    {
-                      label: "Deposit Requirements",
-                      pcp: "Flexible: from £0 deposit up to 35% of vehicle value. Part exchange can also serve as full down payment.",
-                      hp: "Flexible: £0 deposit available, with higher deposits significantly dropping total monthly liability and total interest paid.",
-                    },
-                    {
-                      label: "Annual Mileage Cap",
-                      pcp: "Agreed at start (e.g. 6k to 15k miles). Excess mileage charges only apply if you decide to return the car at the end.",
-                      hp: "No mileage limits. Drive as much as you require with zero excess mileage penalties.",
-                    },
-                    {
-                      label: "Ideal For Driver Profile",
-                      pcp: "Motorists who enjoy changing cars every 2 to 4 years and desire maximum vehicle for a lower monthly outlay.",
-                      hp: "Drivers keeping their car long-term, high-mileage commuters, or buyers prioritizing full vehicle equity and asset ownership.",
-                    },
-                  ].map((row, index) => (
-                    <div
-                      key={row.label}
-                      className={`grid grid-cols-12 p-space-md items-center font-body-md text-body-md ${
-                        index % 2 === 0 ? "bg-surface-container-lowest" : "bg-surface-container-low"
-                      }`}
-                    >
-                      <div className="col-span-4 font-bold text-on-surface">{row.label}</div>
-                      <div className="col-span-4 text-on-surface-variant pr-space-md">{row.pcp}</div>
-                      <div className="col-span-4 text-on-surface-variant">{row.hp}</div>
-                    </div>
-                  ))}
+                <p className="font-body-md text-body-md text-on-surface-variant pt-2">
+                  East Midland Cars Limited is only permitted to introduce you to Finset Limited. We
+                  do not provide advice or recommendations on finance products.
+                </p>
+                <p className="font-body-md text-body-md text-on-surface-variant pt-2">
+                  For further information about the finance products and services available through
+                  Finset Limited, please read our Initial Disclosure Document.
+                </p>
+                <div className="pt-space-md">
+                  <Link
+                    href="/initial-disclosure-document"
+                    className="inline-flex items-center gap-space-xs px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-sm"
+                  >
+                    <span>Read Our Initial Disclosure Document</span>
+                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  </Link>
                 </div>
+                <p className="font-legal-fineprint text-legal-fineprint text-outline pt-space-md">
+                  All finance is subject to status. Terms and conditions apply.
+                </p>
               </div>
             </div>
           </section>
@@ -309,10 +278,22 @@ export default function FinanceCalculatorPage() {
             <div className="max-w-[1320px] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
                 {[
-                  { icon: "verified", title: "FCA Regulated Partner", body: "Finset Limited FRN: 987805. East Midland Cars Limited FRN: 1058774. Compliant ethical broker." },
+                  {
+                    icon: "verified",
+                    title: "FCA Registered",
+                    body: "East Midland Cars Limited is an Introducer Appointed Representative of Finset Limited. Our FCA Reference Number is 1058774. Finset Limited is authorised and regulated by the Financial Conduct Authority under FRN 987805 and acts as a credit broker, not a lender.",
+                  },
                   { icon: "lock", title: "256-Bit SSL Encryption", body: "Bank-grade security protocols safeguarding your personal data under strict UK GDPR standards." },
-                  { icon: "savings", title: "£0 Deposit Available", body: "Drive away without upfront cash commitments. Subject to status and income assessment." },
-                  { icon: "diversity_3", title: "Prime & Sub-Prime Panel", body: "Specialized lending programs assisting clients with diverse financial circumstances and credit ratings." },
+                  {
+                    icon: "savings",
+                    title: "Finance Subject to Status",
+                    body: "All finance is subject to status. Terms and conditions apply.",
+                  },
+                  {
+                    icon: "diversity_3",
+                    title: "Panel of Lenders",
+                    body: "Finset Limited works with a specific panel of lenders and can only offer finance products from lenders on its panel.",
+                  },
                 ].map((card) => (
                   <div key={card.title} className="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
                     <div className="p-2.5 rounded-lg bg-surface-container-high text-secondary shrink-0">
@@ -342,41 +323,119 @@ export default function FinanceCalculatorPage() {
                   settlement options at our Leicester dealership.
                 </p>
                 <div className="p-space-md rounded-xl bg-surface-container-low space-y-2">
-                  <p className="font-headline-sm text-headline-sm text-on-surface">Need individual advice?</p>
+                  <p className="font-headline-sm text-headline-sm text-on-surface">Have a Finance Question?</p>
                   <p className="font-body-sm text-body-sm text-on-surface-variant">
-                    Our certified finance team is on site 6 days a week to review options with zero
-                    sales pressure.
+                    East Midland Cars Limited can introduce you to Finset Limited for vehicle
+                    finance. As an Introducer Appointed Representative, we are not able to discuss
+                    finance products or provide financial advice or recommendations.
                   </p>
-                  <a className="inline-flex items-center gap-space-xs text-secondary font-label-md text-label-md pt-2" href="tel:01162898888">
-                    <span className="material-symbols-outlined text-[18px]">call</span>
-                    <span>Call 0116 289 8888</span>
-                  </a>
+                  <p className="font-body-sm text-body-sm text-on-surface-variant">
+                    For questions regarding a finance application, finance products or an
+                    acceptance, please contact Finset Limited directly.
+                  </p>
                 </div>
               </div>
-              <div className="lg:col-span-8">
+              <div className="lg:col-span-8 space-y-space-md">
                 <Accordion items={FAQ_ITEMS} />
+                <div className="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+                  <p className="font-legal-fineprint text-legal-fineprint text-outline">
+                    All finance is subject to status. Terms and conditions apply.
+                  </p>
+                  <Link
+                    href="/initial-disclosure-document"
+                    className="inline-flex items-center gap-space-xs px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-sm shrink-0"
+                  >
+                    <span>Read Our Initial Disclosure Document</span>
+                    <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </section>
 
           {/* CTA strip */}
           <section className="w-full bg-surface-container-highest py-space-xl px-margin-mobile lg:px-margin-desktop">
-            <div className="max-w-[1320px] mx-auto rounded-2xl bg-primary-container text-on-primary p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-xl">
-              <div className="space-y-space-xs max-w-2xl">
-                <span className="text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wide">Ready for the road?</span>
-                <h3 className="font-headline-xl text-headline-xl text-on-primary">Get Pre-Approved for Your Car in Leicester</h3>
-                <p className="font-body-md text-body-md text-primary-fixed-dim">
-                  Join hundreds of Leicester drivers who secured competitive, transparent finance
-                  through East Midland Cars. Zero obligation and zero risk to your credit record.
-                </p>
+            <div className="max-w-[1320px] mx-auto rounded-2xl bg-primary-container text-on-primary p-space-xl shadow-xl">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-space-lg">
+                <div className="space-y-space-xs max-w-2xl">
+                  <span className="text-secondary-fixed font-label-sm text-label-sm uppercase tracking-wide">Ready for the road?</span>
+                  <h3 className="font-headline-xl text-headline-xl text-on-primary">Apply for Vehicle Finance</h3>
+                  <p className="font-body-md text-body-md text-primary-fixed-dim">
+                    Interested in financing your vehicle? East Midland Cars Limited can introduce
+                    you to Finset Limited, who may be able to help you arrange vehicle finance
+                    through their panel of lenders.
+                  </p>
+                  <p className="font-body-md text-body-md text-primary-fixed-dim">
+                    East Midland Cars Limited is an Introducer Appointed Representative of Finset
+                    Limited. We are only permitted to introduce you to Finset Limited and are not
+                    able to discuss any finance application or acceptance in detail.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-space-sm shrink-0 w-full sm:w-auto">
+                  <a href="tel:01162898888" className="px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center shadow-md">
+                    Apply for Finance
+                  </a>
+                  <a href="tel:01162898888" className="px-6 py-3.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-surface-container-high/20 transition-all text-center">
+                    0116 289 8888
+                  </a>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-space-sm shrink-0 w-full sm:w-auto">
-                <a href="tel:01162898888" className="px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all text-center shadow-md">
-                  Start Soft Search Application
-                </a>
-                <a href="tel:01162898888" className="px-6 py-3.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-surface-container-high/20 transition-all text-center">
-                  0116 289 8888
-                </a>
+              <p className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim pt-space-md">
+                All finance is subject to status. Terms and conditions apply.
+              </p>
+            </div>
+          </section>
+
+          {/* Commission disclosure */}
+          <section className="w-full py-space-2xl px-margin-mobile lg:px-margin-desktop bg-surface-container-low">
+            <div className="max-w-[1320px] mx-auto">
+              <div className="bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl space-y-space-lg">
+                <div>
+                  <div className="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase mb-space-xs">
+                    <span className="material-symbols-outlined text-[16px] text-secondary">request_quote</span>
+                    Commission Disclosure
+                  </div>
+                  <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    We will receive a commission from Finset Limited should you decide to enter into
+                    an agreement through them with a lender from their panel and this could be
+                    either a fixed fee or a percentage of the amount of finance taken.
+                  </p>
+                  <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed pt-space-sm">
+                    The commission payable to Finset Limited by the lender may be a flat fee or a
+                    percentage of the amount you borrow.
+                  </p>
+                  <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed pt-space-sm">
+                    You can request further information about this commission at any time directly
+                    from Finset Limited by contacting them:
+                  </p>
+                  <div className="flex flex-wrap items-center gap-space-lg pt-space-sm font-body-sm text-body-sm text-on-surface">
+                    <a className="flex items-center gap-1.5 text-secondary font-semibold hover:underline" href="mailto:compliance@finset.co.uk">
+                      <span className="material-symbols-outlined text-[18px]">mail</span>
+                      compliance@finset.co.uk
+                    </a>
+                    <a className="flex items-center gap-1.5 text-secondary font-semibold hover:underline" href="tel:01245967999">
+                      <span className="material-symbols-outlined text-[18px]">call</span>
+                      01245 967999
+                    </a>
+                  </div>
+                  <div className="pt-space-md">
+                    <a
+                      href="mailto:compliance@finset.co.uk"
+                      className="inline-flex items-center gap-space-xs px-5 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-sm"
+                    >
+                      <span>View Finset&apos;s Full Commission Disclosure</span>
+                      <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="border-t border-outline-variant pt-space-lg">
+                  <p className="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Fees</p>
+                  <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Ourselves and Finset Limited do not charge you a fee for our services. However,
+                    the lender may charge interest or fees as part of your finance agreement. These
+                    will be clearly set out in the documentation provided by the lender to you.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
