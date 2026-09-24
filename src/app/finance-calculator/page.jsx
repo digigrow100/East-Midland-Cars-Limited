@@ -77,7 +77,7 @@ export default function FinanceCalculatorPage() {
       <main className="w-full pt-[80px] bg-surface min-h-[calc(100vh-80px)]">
         <div className="flex flex-col w-full">
           {/* Trust pill banner */}
-          <section className="w-full bg-surface-container-low py-space-sm px-margin-mobile lg:px-margin-desktop">
+          <section className="w-full bg-surface-container-low py-space-md px-margin-mobile lg:px-margin-desktop">
             <div className="max-w-[1320px] mx-auto flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
               <div className="flex items-center gap-space-md flex-wrap">
                 <span className="flex items-center gap-space-xs text-secondary font-semibold">
