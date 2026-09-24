@@ -72,7 +72,7 @@ export default function WarrantyRacPage() {
   return (
     <>
       <Header />
-      <main className="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]">
+      <main className="w-full pt-[80px] bg-surface min-h-[calc(100vh-80px)]">
         <div className="flex flex-col w-full">
           {/* Hero */}
           <section className="relative w-full bg-primary-container text-inverse-on-surface overflow-hidden py-space-2xl">

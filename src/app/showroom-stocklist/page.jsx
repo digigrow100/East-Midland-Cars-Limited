@@ -12,7 +12,7 @@ export default function ShowroomStocklistPage() {
   return (
     <>
       <Header />
-      <main className="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]">
+      <main className="w-full pt-[80px] bg-surface min-h-[calc(100vh-80px)]">
         <div className="flex flex-col w-full">
           {/* Hero / overview bar */}
           <section className="w-full bg-surface-container-low py-space-xl">

@@ -48,7 +48,7 @@ export default function InitialDisclosureDocumentPage() {
   return (
     <>
       <Header />
-      <main className="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]">
+      <main className="w-full pt-[80px] bg-surface min-h-[calc(100vh-80px)]">
         <div className="relative w-full max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl">
           {/* Header */}
           <div className="flex flex-col space-y-space-md mb-space-2xl">
