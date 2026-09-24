@@ -3,9 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ReviewsGrid from "@/components/ReviewsGrid";
 import ReviewForm from "@/components/ReviewForm";
-import handoverAudiTTImage from "@/assets/images/celebrating_their_new_sports_coupe.webp";
-import handoverMercedesImage from "@/assets/images/golden_hour_dealership_confidence.webp";
-import handoverBmwImage from "@/assets/images/friends_celebrate_with_a_blue_convertible.webp";
+import handoverAudiImage from "@/assets/images/audi_rs3_tail_light_detail.webp";
+import handoverMercedesImage from "@/assets/images/mercedes_amg_c63_rear.webp";
+import handoverDetailImage from "@/assets/images/audi_rs3_green_side_detail.webp";
 
 export const metadata = {
   title: "Customer Reviews | East Midland Cars Limited",
@@ -15,37 +15,37 @@ export const metadata = {
 
 const HANDOVERS = [
   {
-    title: "Audi TT Black Edition Handover",
-    body: "Arnold receiving the keys after completing his final check and 12-month RAC warranty activation.",
+    title: "Audi RS3 Sportback Handover",
+    body: "Arnold's keys ready after completing his final check and 12-month RAC warranty activation.",
     location: "Unit 38 Oswin Road, Leicester",
     tag: "Full HPI Pack",
     badge: "Handover Verified",
     corner: "Key Presentation",
     cornerIcon: "key",
-    img: handoverAudiTTImage,
-    alt: "A proud young British couple in front of a metallic grey Audi TT coupe outside East Midland Cars showroom, holding the keys",
+    img: handoverAudiImage,
+    alt: "Close-up detail of a Kyalami Green Audi RS3 Sportback ready for handover at East Midland Cars showroom",
   },
   {
-    title: "Mercedes-Benz A-Class Handover",
-    body: "Charlotte drive-away ready within 60 minutes via integrated Finset instant credit approval.",
+    title: "Mercedes-AMG C63 Handover",
+    body: "Charlotte's C63 was drive-away ready within 60 minutes via integrated Finset instant credit approval.",
     location: "Leicester Showroom Handover",
     tag: "0% Admin Fee",
     badge: "Handover Verified",
     corner: "Same-Day Finance",
     cornerIcon: "credit_score",
     img: handoverMercedesImage,
-    alt: "A professional woman smiling next to an immaculate white Mercedes-Benz A-Class hatchback on the East Midland Cars forecourt",
+    alt: "White Mercedes-AMG C63 saloon ready for handover on the East Midland Cars forecourt",
   },
   {
-    title: "BMW 2 Series Doorstep Delivery",
-    body: "Lina & Vanessa taking handover directly at home in Coventry with complete RAC pre-delivery certificate.",
-    location: "Coventry Direct Handover",
+    title: "Nationwide Doorstep Delivery",
+    body: "Delivered directly to the customer's home with a complete RAC pre-delivery certificate.",
+    location: "Nationwide Direct Handover",
     tag: "Inspected & Cleaned",
     badge: "Nationwide Delivery",
     corner: "Doorstep Arrival",
     cornerIcon: "local_shipping",
-    img: handoverBmwImage,
-    alt: "Two cheerful friends next to a sporty blue BMW 2 Series Convertible with the roof down in a Coventry driveway",
+    img: handoverDetailImage,
+    alt: "Close-up detail shot of a freshly prepared vehicle ready for doorstep delivery by East Midland Cars",
   },
 ];
 

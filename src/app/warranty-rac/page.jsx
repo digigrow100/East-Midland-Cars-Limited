@@ -2,7 +2,7 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CoverageExplorer from "@/components/CoverageExplorer";
-import heroImage from "@/assets/images/luxury_sedan_in_modern_auto_workshop.webp";
+import heroImage from "@/assets/images/audi_rs3_quattro_detail.webp";
 
 export const metadata = {
   title: "Warranty & RAC | East Midland Cars Limited",
@@ -354,7 +354,7 @@ export default function WarrantyRacPage() {
                   <div className="relative rounded-xl overflow-hidden shadow-lg h-80 w-full">
                     <Image
                       src={heroImage}
-                      alt="A clean modern British automotive workshop showing certified technicians inspecting a premium executive car on a hydraulic lift"
+                      alt="Close-up detail of the Quattro badge and sill trim on a Kyalami Green Audi RS3 at the East Midland Cars Leicester workshop"
                       fill
                       className="object-cover"
                     />
