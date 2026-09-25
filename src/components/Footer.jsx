@@ -53,7 +53,7 @@ export default function Footer() {
             <span className="material-symbols-outlined text-[16px] text-secondary-container">
               account_balance
             </span>
-            <span>FCA Authorised Representative</span>
+            <span>Introducer Appointed Representative</span>
           </div>
         </div>
 
