@@ -247,9 +247,6 @@ export default function Footer() {
               >
                 Complaints
               </a>
-              <a className="hover:text-on-primary transition-colors" href="#">
-                Privacy Policy
-              </a>
               <a
                 className="hover:text-on-primary transition-colors"
                 href="https://www.finset.co.uk/privacy-policy"
@@ -289,12 +286,6 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 Finset Limited
-              </a>
-              <a className="hover:text-on-primary transition-colors" href="#">
-                Terms of Business
-              </a>
-              <a className="hover:text-on-primary transition-colors" href="#">
-                Cookie Preferences
               </a>
             </div>
             <p>© 2025 East Midland Cars Limited. All Rights Reserved. Leicester, LE3 1HR.</p>
