@@ -107,7 +107,7 @@ const PILLARS = [
   {
     icon: "history_edu",
     title: "Clear HPI & Mileage",
-    desc: "Guaranteed no outstanding finance, total loss, or unrecorded damage.",
+    desc: "Guaranteed no outstanding finance or total loss.",
   },
   {
     icon: "payments",
@@ -411,7 +411,7 @@ export default function Home() {
                     </div>
                     <div className="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-end">
                       <a
-                        href="tel:01162898888"
+                        href="tel:01163194785"
                         className="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-secondary transition-colors font-label-md text-label-md font-semibold inline-flex items-center gap-1"
                       >
                         <span>Enquire</span>
@@ -505,7 +505,7 @@ export default function Home() {
                           transparent market appraisal towards your next vehicle.
                         </p>
                       </div>
-                      <form className="space-y-space-sm pt-space-xs" action="tel:01162898888">
+                      <form className="space-y-space-sm pt-space-xs" action="tel:01163194785">
                         <div>
                           <label className="block font-label-sm text-label-sm text-primary-fixed-dim uppercase mb-1">
                             Vehicle Registration
@@ -538,7 +538,7 @@ export default function Home() {
                             </label>
                             <input
                               className="w-full bg-inverse-surface text-on-primary rounded-lg px-3 py-2.5 font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary"
-                              placeholder="07475 248063"
+                              placeholder="07538 000250"
                               type="tel"
                             />
                           </div>
@@ -554,7 +554,7 @@ export default function Home() {
                           />
                         </div>
                         <a
-                          href="tel:01162898888"
+                          href="tel:01163194785"
                           className="w-full py-3.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container font-label-lg text-label-lg font-bold uppercase tracking-wide transition-all shadow-md flex items-center justify-center gap-2"
                         >
                           <span className="material-symbols-outlined text-[20px]">price_check</span>
@@ -719,8 +719,8 @@ export default function Home() {
                         <div>
                           <h4 className="font-label-md text-label-md font-bold text-on-surface">Direct Sales Lines</h4>
                           <p className="font-body-md text-body-md text-on-surface-variant">
-                            <a className="text-secondary font-bold hover:underline" href="tel:01162898888">0116 289 8888</a> /{" "}
-                            <a className="text-secondary font-bold hover:underline" href="tel:07475248063">07475 248063</a>
+                            <a className="text-secondary font-bold hover:underline" href="tel:01163194785">0116 319 4785</a> /{" "}
+                            <a className="text-secondary font-bold hover:underline" href="tel:07538000250">07538 000250</a>
                           </p>
                         </div>
                       </div>
@@ -738,7 +738,7 @@ export default function Home() {
                     </a>
                     <a
                       className="px-5 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold hover:bg-on-secondary-container transition-colors inline-flex items-center gap-2"
-                      href="tel:01162898888"
+                      href="tel:01163194785"
                     >
                       <span className="material-symbols-outlined text-[18px]">calendar_month</span>
                       <span>Book Showroom Test Drive</span>

@@ -50,7 +50,7 @@ const CLAIM_STEPS = [
     icon: "phone_in_talk",
     title: "Call The Claims Line",
     body: "Contact our warranty claims team with your registration and mileage. An advisor will register the event and assign your claim reference in under 5 minutes.",
-    note: ["Claims Hotline: ", "0116 289 8888"],
+    note: ["Claims Hotline: ", "0116 319 4785"],
   },
   {
     step: "2",
@@ -238,7 +238,7 @@ export default function WarrantyRacPage() {
                   </div>
                 </div>
                 <div className="pt-space-xl">
-                  <a href="tel:01162898888" className="block w-full text-center py-3.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all">
+                  <a href="tel:01163194785" className="block w-full text-center py-3.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all">
                     Included With Every Vehicle
                   </a>
                 </div>
@@ -277,7 +277,7 @@ export default function WarrantyRacPage() {
                   </div>
                 </div>
                 <div className="pt-space-xl">
-                  <a href="tel:01162898888" className="block w-full text-center py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
+                  <a href="tel:01163194785" className="block w-full text-center py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
                     Upgrade to Gold Cover
                   </a>
                 </div>
@@ -313,7 +313,7 @@ export default function WarrantyRacPage() {
                   </div>
                 </div>
                 <div className="pt-space-xl">
-                  <a href="tel:01162898888" className="block w-full text-center py-3.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-inverse-surface transition-all">
+                  <a href="tel:01163194785" className="block w-full text-center py-3.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-inverse-surface transition-all">
                     Inquire for Platinum
                   </a>
                 </div>
@@ -431,7 +431,7 @@ export default function WarrantyRacPage() {
                   <div className="pt-space-xs flex flex-wrap gap-space-md font-body-sm text-body-sm text-inverse-on-surface">
                     <span className="flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-secondary-container text-[18px]">call</span>
-                      <strong>0116 289 8888</strong> / 07475 248063
+                      <strong>0116 319 4785</strong> / 07538 000250
                     </span>
                     <span className="flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-secondary-container text-[18px]">mail</span>
@@ -440,7 +440,7 @@ export default function WarrantyRacPage() {
                   </div>
                 </div>
                 <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
-                  <a href="tel:01162898888" className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
+                  <a href="tel:01163194785" className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
                     <span className="material-symbols-outlined text-[18px]">phone_enabled</span>
                     <span>Call Leicester Team</span>
                   </a>

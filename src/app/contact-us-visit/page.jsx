@@ -14,8 +14,8 @@ const CONTACT_CARDS = [
   {
     icon: "call",
     title: "Call The Showroom",
-    lines: ["0116 289 8888", "07475 248063"],
-    href: "tel:01162898888",
+    lines: ["0116 319 4785", "07538 000250"],
+    href: "tel:01163194785",
     cta: "Call Now",
   },
   {
@@ -63,9 +63,9 @@ export default function ContactUsVisitPage() {
                     question, our Leicester team is on hand six days a week to help.
                   </p>
                   <div className="pt-space-sm flex flex-wrap items-center gap-space-md">
-                    <a href="tel:01162898888" className="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all shadow-md">
+                    <a href="tel:01163194785" className="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all shadow-md">
                       <span className="material-symbols-outlined text-[18px]">call</span>
-                      <span>Call 0116 289 8888</span>
+                      <span>Call 0116 319 4785</span>
                     </a>
                     <a href="#contact-form" className="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg bg-surface-container-high/15 hover:bg-surface-container-high/25 text-on-primary font-label-md text-label-md transition-all">
                       <span className="material-symbols-outlined text-[18px]">edit_note</span>
@@ -203,7 +203,7 @@ export default function ContactUsVisitPage() {
                     <span className="material-symbols-outlined text-[18px]">directions_car</span>
                     <span>Browse Available Stock</span>
                   </a>
-                  <a href="tel:01162898888" className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-surface-container-high/15 hover:bg-surface-container-high/25 text-on-primary font-label-md text-label-md transition-all">
+                  <a href="tel:01163194785" className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-surface-container-high/15 hover:bg-surface-container-high/25 text-on-primary font-label-md text-label-md transition-all">
                     <span className="material-symbols-outlined text-[18px]">phone_enabled</span>
                     <span>Call The Team</span>
                   </a>
