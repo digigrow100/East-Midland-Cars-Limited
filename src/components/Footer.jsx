@@ -79,7 +79,7 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
                   call
                 </span>
-                0116 289 8888 / 07475 248063
+                0116 319 4785 / 07538 000250
               </p>
               <p className="flex items-center gap-space-xs">
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
@@ -288,7 +288,7 @@ export default function Footer() {
                 Finset Limited
               </a>
             </div>
-            <p>© 2025 East Midland Cars Limited. All Rights Reserved. Leicester, LE3 1HR.</p>
+            <p>© {new Date().getFullYear()} East Midland Cars Limited. All Rights Reserved. Leicester, LE3 1HR.</p>
           </div>
         </div>
       </div>

@@ -11,8 +11,8 @@ export default function PlaceholderPage({ title }) {
           <h1 className="font-headline-xl text-headline-xl text-on-surface tracking-tight">{title}</h1>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
             Content for this page is coming soon. In the meantime, call us on{" "}
-            <a className="text-secondary font-semibold" href="tel:01162898888">
-              0116 289 8888
+            <a className="text-secondary font-semibold" href="tel:01163194785">
+              0116 319 4785
             </a>{" "}
             and our Leicester team will help directly.
           </p>
