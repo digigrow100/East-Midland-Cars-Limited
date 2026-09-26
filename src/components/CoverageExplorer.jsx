@@ -9,7 +9,7 @@ const TABS = [
     icon: "minor_crash",
     items: [
       { icon: "settings", title: "Cylinder Block & Heads", body: "Pistons, rings, gudgeon pins, crankshaft, main bearings, camshafts, followers, and cylinder head casting." },
-      { icon: "speed", title: "Turbocharger & Supercharger", body: "Factory-fitted turbo turbines, wastegates, intercooler, and actuator controls (Included under Gold & Platinum tiers)." },
+      { icon: "speed", title: "Turbocharger & Supercharger", body: "Factory-fitted turbo turbines, wastegates, intercooler, and actuator controls, where included under the selected extended warranty package." },
       { icon: "sync", title: "Timing Belts & Chains", body: "Timing chain, tensioners, guide rails, and timing belt failure protection subject to manufacturer service schedule evidence." },
     ],
   },

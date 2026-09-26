@@ -322,9 +322,9 @@ export default function Stocklist() {
               Leicester Specialist Help
             </p>
             <p className="font-headline-sm text-headline-sm">Speak with our sales team today</p>
-            <a className="inline-flex items-center gap-space-xs text-secondary-fixed font-bold font-body-sm text-body-sm hover:underline" href="tel:01163194785">
+            <a className="inline-flex items-center gap-space-xs text-secondary-fixed font-bold font-body-sm text-body-sm hover:underline" href="tel:01163194784">
               <span className="material-symbols-outlined text-[18px]">call</span>
-              0116 319 4785
+              0116 319 4784
             </a>
           </div>
         </div>
@@ -346,7 +346,7 @@ export default function Stocklist() {
         {filtered.length === 0 ? (
           <div className="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm text-center text-on-surface-variant font-body-md text-body-md">
             No vehicles match those filters right now — try widening your budget or body style,
-            or call us on <a className="text-secondary font-semibold" href="tel:01163194785">0116 319 4785</a> and
+            or call us on <a className="text-secondary font-semibold" href="tel:01163194784">0116 319 4784</a> and
             our team will find something close.
           </div>
         ) : (
@@ -407,10 +407,10 @@ export default function Stocklist() {
                     </span>
                   </div>
                   <div className="grid grid-cols-2 gap-space-xs pt-1">
-                    <a href="tel:01163194785" className="w-full py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors text-center">
+                    <a href="tel:01163194784" className="w-full py-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors text-center">
                       Enquire Now
                     </a>
-                    <a href="tel:01163194785" className="w-full py-2 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-sm text-label-sm font-semibold transition-colors text-center">
+                    <a href="tel:01163194784" className="w-full py-2 rounded-lg bg-primary hover:bg-inverse-surface text-on-primary font-label-sm text-label-sm font-semibold transition-colors text-center">
                       View Vehicle
                     </a>
                   </div>
@@ -433,11 +433,11 @@ export default function Stocklist() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-space-xs w-full md:w-auto shrink-0">
-            <a href="tel:01163194785" className="px-5 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all flex items-center justify-center gap-2 shadow-sm font-semibold">
+            <a href="tel:01163194784" className="px-5 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all flex items-center justify-center gap-2 shadow-sm font-semibold">
               <span className="material-symbols-outlined text-[18px]">travel_explore</span>
               Request Custom Sourcing
             </a>
-            <a href="tel:01163194785" className="px-5 py-3 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center justify-center gap-2 font-semibold">
+            <a href="tel:01163194784" className="px-5 py-3 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface transition-all flex items-center justify-center gap-2 font-semibold">
               <span className="material-symbols-outlined text-[18px]">call</span>
               Call Sales Desk
             </a>

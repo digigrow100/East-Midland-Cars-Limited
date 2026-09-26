@@ -296,7 +296,7 @@ export default function CustomerReviewsPage() {
                     Browse Available Stock
                   </a>
                   <a
-                    href="tel:01163194785"
+                    href="tel:01163194784"
                     className="inline-flex items-center justify-center gap-space-xs px-6 py-3 rounded-lg bg-inverse-surface text-on-primary font-label-md text-label-md hover:bg-surface-container-high/20 transition-all"
                   >
                     <span className="material-symbols-outlined text-[18px]">call</span>
