@@ -50,7 +50,7 @@ const CLAIM_STEPS = [
     icon: "phone_in_talk",
     title: "Call The Claims Line",
     body: "Contact our warranty claims team with your registration and mileage. An advisor will register the event and assign your claim reference in under 5 minutes.",
-    note: ["Claims Hotline: ", "0116 319 4785"],
+    note: ["Claims Hotline: ", "0116 319 4784"],
   },
   {
     step: "2",
@@ -202,121 +202,21 @@ export default function WarrantyRacPage() {
 
           {/* Tier comparison */}
           <section className="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop py-space-2xl w-full" id="tier-comparison">
-            <div className="text-center max-w-2xl mx-auto mb-space-xl">
+            <div className="max-w-3xl mx-auto bg-surface-container-lowest rounded-2xl shadow-sm p-space-xl text-center space-y-space-sm">
               <span className="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Transparent Plans</span>
-              <h2 className="font-headline-xl text-headline-xl text-on-surface mt-1">Select Your Protection Level</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant mt-2">
-                Every vehicle includes our complimentary 3-month dealer warranty. Upgrade at
-                purchase to lock in up to 3 years of seamless mechanical and electrical cover.
+              <h2 className="font-headline-xl text-headline-xl text-on-surface mt-1">
+                Extended Warranty Packages &mdash; From £299
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Additional warranty options are available from £299. Price and level of cover may
+                vary depending on the vehicle, warranty term and cover selected. Full terms,
+                conditions, eligibility requirements and exclusions are provided before purchase.
               </p>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch">
-              {/* Standard */}
-              <div className="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Standard Cover</span>
-                    <span className="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">Included Free</span>
-                  </div>
-                  <h3 className="font-headline-lg text-headline-lg text-on-surface mt-space-sm font-bold">3-Month Guarantee</h3>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Essential mechanical protection supplied with every purchased vehicle.</p>
-                  <div className="my-space-lg">
-                    <span className="font-headline-xl text-headline-xl font-bold text-on-surface">£0</span>
-                    <span className="font-body-sm text-body-sm text-on-surface-variant"> / complimentary</span>
-                  </div>
-                  <div className="space-y-space-sm font-body-sm text-body-sm text-on-surface">
-                    {["Major Engine Components", "Manual & Automatic Gearbox", "Drive Axle & Differential", "Primary Braking System"].map((item) => (
-                      <div key={item} className="flex items-center gap-space-xs">
-                        <span className="material-symbols-outlined text-secondary text-[20px]">check</span>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                    <div className="flex items-center gap-space-xs text-outline opacity-60">
-                      <span className="material-symbols-outlined text-[20px]">close</span>
-                      <span>Electrical &amp; Multimedia</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="pt-space-xl">
-                  <a href="tel:01163194785" className="block w-full text-center py-3.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all">
-                    Included With Every Vehicle
-                  </a>
-                </div>
-              </div>
-
-              {/* Gold */}
-              <div className="bg-primary-container text-inverse-on-surface rounded-xl p-space-xl shadow-xl flex flex-col justify-between relative lg:-translate-y-2">
-                <div className="absolute -top-3.5 right-6 px-3 py-1 bg-secondary text-on-secondary rounded-full font-label-sm text-label-sm font-bold shadow-sm uppercase tracking-wider">
-                  Most Popular Choice
-                </div>
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">Executive Tier</span>
-                    <span className="px-2.5 py-1 rounded bg-inverse-surface text-secondary-container font-label-sm text-label-sm">12 Months</span>
-                  </div>
-                  <h3 className="font-headline-lg text-headline-lg text-on-primary mt-space-sm font-bold">12-Month Gold Cover</h3>
-                  <p className="font-body-sm text-body-sm text-primary-fixed-dim mt-1">Recommended for modern executive vehicles with sophisticated electronics.</p>
-                  <div className="my-space-lg">
-                    <span className="font-headline-xl text-headline-xl font-bold text-on-primary">£299</span>
-                    <span className="font-body-sm text-body-sm text-primary-fixed-dim"> / one-off or £24.90/mo</span>
-                  </div>
-                  <div className="space-y-space-sm font-body-sm text-body-sm text-inverse-on-surface">
-                    {[
-                      "All 3-Month Standard Inclusions",
-                      "Full Electrical System & Alternator",
-                      "Multimedia, Infotainment & Sat-Nav",
-                      "Turbocharger & Intercooler Units",
-                      "Air Conditioning Compressor & Condenser",
-                      "ECU, Modules & Ignition System",
-                    ].map((item) => (
-                      <div key={item} className="flex items-center gap-space-xs">
-                        <span className="material-symbols-outlined text-secondary-container text-[20px]">check</span>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="pt-space-xl">
-                  <a href="tel:01163194785" className="block w-full text-center py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
-                    Upgrade to Gold Cover
-                  </a>
-                </div>
-              </div>
-
-              {/* Platinum */}
-              <div className="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Ultimate Protection</span>
-                    <span className="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">24 or 36 Months</span>
-                  </div>
-                  <h3 className="font-headline-lg text-headline-lg text-on-surface mt-space-sm font-bold">Platinum Total Cover</h3>
-                  <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Total bumper-to-bumper vehicle security with premium travel allowance.</p>
-                  <div className="my-space-lg">
-                    <span className="font-headline-xl text-headline-xl font-bold text-on-surface">£499</span>
-                    <span className="font-body-sm text-body-sm text-on-surface-variant"> / 24mo or £19.90/mo finance</span>
-                  </div>
-                  <div className="space-y-space-sm font-body-sm text-body-sm text-on-surface">
-                    {[
-                      "All Gold Tier Protections Included",
-                      "Bumper-to-Bumper Mechanical & Electrical",
-                      "Selected Wear & Tear Component Allowance",
-                      "Car Hire Contribution (£50/day up to 7 days)",
-                      "Hotel Accommodation During Repairs",
-                      "£0 Excess on All Approved Claims",
-                    ].map((item) => (
-                      <div key={item} className="flex items-center gap-space-xs">
-                        <span className="material-symbols-outlined text-secondary text-[20px]">check</span>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="pt-space-xl">
-                  <a href="tel:01163194785" className="block w-full text-center py-3.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-inverse-surface transition-all">
-                    Inquire for Platinum
-                  </a>
-                </div>
+              <div className="pt-space-sm">
+                <a href="tel:01163194784" className="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
+                  <span className="material-symbols-outlined text-[18px]">phone_enabled</span>
+                  <span>Ask About Extended Warranty</span>
+                </a>
               </div>
             </div>
           </section>
@@ -431,7 +331,7 @@ export default function WarrantyRacPage() {
                   <div className="pt-space-xs flex flex-wrap gap-space-md font-body-sm text-body-sm text-inverse-on-surface">
                     <span className="flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-secondary-container text-[18px]">call</span>
-                      <strong>0116 319 4785</strong> / 07538 000250
+                      <strong>0116 319 4784</strong> / 07538 000250
                     </span>
                     <span className="flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-secondary-container text-[18px]">mail</span>
@@ -440,7 +340,7 @@ export default function WarrantyRacPage() {
                   </div>
                 </div>
                 <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
-                  <a href="tel:01163194785" className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
+                  <a href="tel:01163194784" className="inline-flex items-center justify-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all shadow-md">
                     <span className="material-symbols-outlined text-[18px]">phone_enabled</span>
                     <span>Call Leicester Team</span>
                   </a>

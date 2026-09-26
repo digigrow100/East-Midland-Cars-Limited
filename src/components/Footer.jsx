@@ -79,7 +79,7 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">
                   call
                 </span>
-                0116 319 4785 / 07538 000250
+                0116 319 4784 / 07538 000250
               </p>
               <p className="flex items-center gap-space-xs">
                 <span className="material-symbols-outlined text-[18px] text-secondary-container">

@@ -451,7 +451,7 @@ export default function InitialDisclosureDocumentPage() {
                     </div>
                     <div className="p-3 bg-surface-container-lowest rounded">
                       <span className="font-semibold text-on-surface block mb-1">By Telephone:</span>
-                      0116 319 4785
+                      0116 319 4784
                       <br />
                       07538 000250
                       <br />
