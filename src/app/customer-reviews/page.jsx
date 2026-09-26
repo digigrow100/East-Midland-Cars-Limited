@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ReviewsGrid from "@/components/ReviewsGrid";
 import ReviewForm from "@/components/ReviewForm";
 import handoverAudiImage from "@/assets/images/audi_rs3_tail_light_detail.webp";
 import handoverMercedesImage from "@/assets/images/mercedes_amg_c63_rear.webp";
@@ -10,28 +9,28 @@ import handoverDetailImage from "@/assets/images/audi_rs3_green_side_detail.webp
 export const metadata = {
   title: "Customer Reviews | East Midland Cars Limited",
   description:
-    "Read verified customer reviews of East Midland Cars Limited, Leicester — rated 4.8/5 across Google, AutoTrader and CarGurus.",
+    "Read genuine customer reviews of East Midland Cars Limited, Leicester, on Google and AutoTrader.",
 };
 
 const HANDOVERS = [
   {
-    title: "Audi RS3 Sportback Handover",
-    body: "Arnold's keys ready after completing his final check and 12-month RAC warranty activation.",
+    title: "Showroom Key Handover",
+    body: "Every vehicle is prepared and handed over with a completed final check and warranty activation.",
     location: "Unit 38 Oswin Road, Leicester",
     tag: "Full HPI Pack",
-    badge: "Handover Verified",
+    badge: "Showroom Handover",
     corner: "Key Presentation",
     cornerIcon: "key",
     img: handoverAudiImage,
     alt: "Close-up detail of a Kyalami Green Audi RS3 Sportback ready for handover at East Midland Cars showroom",
   },
   {
-    title: "Mercedes-AMG C63 Handover",
-    body: "Charlotte's C63 was drive-away ready within 60 minutes via integrated Finset instant credit approval.",
+    title: "Finance-Assisted Handover",
+    body: "Where finance is introduced through Finset Limited and approved, vehicles are prepared drive-away ready.",
     location: "Leicester Showroom Handover",
     tag: "0% Admin Fee",
-    badge: "Handover Verified",
-    corner: "Same-Day Finance",
+    badge: "Showroom Handover",
+    corner: "Finance Assisted",
     cornerIcon: "credit_score",
     img: handoverMercedesImage,
     alt: "White Mercedes-AMG C63 saloon ready for handover on the East Midland Cars forecourt",
@@ -66,102 +65,39 @@ export default function CustomerReviewsPage() {
                     Independent Motor Retailer Audit
                   </div>
                   <h1 className="font-headline-xl text-headline-xl tracking-tight text-on-primary">
-                    Verified Customer Reviews &amp; Experiences
+                    Customer Reviews &amp; Experiences
                   </h1>
                   <p className="font-body-lg text-body-lg text-primary-fixed-dim leading-relaxed">
-                    Authentic feedback from over 80 verified motorists across Leicestershire, the
-                    Midlands, and nationwide. Every testimonial reflects real purchase records,
-                    certified provenance, and genuine handover experiences at Unit 38 Oswin Road.
+                    Read genuine customer feedback about East Midland Cars Limited directly on our
+                    Google Business profile and AutoTrader dealer page, or share your own experience
+                    below.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-lg bg-inverse-surface/80 p-space-md rounded-xl backdrop-blur-md shadow-xl w-full sm:w-auto self-start lg:self-auto">
-                  <div className="flex flex-col items-center justify-center pr-space-md bg-surface-container-high/5 rounded-lg py-2 px-3">
-                    <span className="font-display-hero text-display-hero-mobile text-on-primary leading-none">4.8</span>
-                    <div className="flex items-center text-amber-400 mt-1">
-                      {Array.from({ length: 4 }).map((_, i) => (
-                        <span key={i} className="material-symbols-outlined text-[18px]">star</span>
-                      ))}
-                      <span className="material-symbols-outlined text-[18px]">star_half</span>
-                    </div>
-                    <span className="font-legal-fineprint text-legal-fineprint text-primary-fixed-dim mt-1">Out of 5.0 Stars</span>
-                  </div>
-                  <div className="space-y-1 min-w-0 text-center sm:text-left">
-                    <div className="flex items-center justify-center sm:justify-start gap-space-xs font-label-md text-label-md text-on-primary">
-                      <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
-                      82 Verified Handovers
-                    </div>
-                    <p className="font-body-sm text-body-sm text-primary-fixed-dim">
-                      100% Recommendation rate for vehicle accuracy &amp; zero hidden fees.
-                    </p>
-                    <div className="flex items-center justify-center sm:justify-start gap-space-xs text-secondary-fixed font-label-sm text-label-sm pt-1">
-                      <span className="material-symbols-outlined text-[16px]">verified_user</span>
-                      FCA Approved Reference #1058774
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Ratings strip */}
-          <section className="w-full bg-surface-container-low py-space-lg shadow-sm">
-            <div className="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-space-md">
-                <div className="bg-surface-container-lowest p-space-md rounded-xl flex items-center gap-space-md shadow-sm">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
-                    <span className="material-symbols-outlined text-[28px]">reviews</span>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-1">
-                      <span className="font-headline-sm text-headline-sm text-on-surface">4.8</span>
-                      <div className="flex text-amber-500">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                          <span key={i} className="material-symbols-outlined text-[14px]">star</span>
-                        ))}
-                      </div>
-                    </div>
-                    <p className="font-label-md text-label-md text-on-surface-variant font-medium">Google Reviews</p>
-                    <p className="font-legal-fineprint text-legal-fineprint text-outline">60+ Direct Customer Ratings</p>
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest p-space-md rounded-xl flex items-center gap-space-md shadow-sm">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
-                    <span className="material-symbols-outlined text-[28px]">workspace_premium</span>
-                  </div>
-                  <div>
-                    <span className="inline-block px-2 py-0.5 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold uppercase">2024 Winner</span>
-                    <p className="font-label-md text-label-md text-on-surface font-semibold">AutoTrader Highly Rated</p>
-                    <p className="font-legal-fineprint text-legal-fineprint text-outline">Exemplary Client Experience</p>
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest p-space-md rounded-xl flex items-center gap-space-md shadow-sm">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
-                    <span className="material-symbols-outlined text-[28px]">military_tech</span>
-                  </div>
-                  <div>
-                    <span className="inline-block px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold uppercase">Certified</span>
-                    <p className="font-label-md text-label-md text-on-surface font-semibold">CarGurus Top Rated</p>
-                    <p className="font-legal-fineprint text-legal-fineprint text-outline">Transparent Dealership Pricing</p>
-                  </div>
-                </div>
-                <div className="bg-surface-container-lowest p-space-md rounded-xl flex items-center gap-space-md shadow-sm">
-                  <div className="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
-                    <span className="material-symbols-outlined text-[28px]">check_circle</span>
-                  </div>
-                  <div>
-                    <span className="font-headline-sm text-headline-sm text-on-surface">100%</span>
-                    <p className="font-label-md text-label-md text-on-surface-variant font-medium">HPI Clean &amp; Audited</p>
-                    <p className="font-legal-fineprint text-legal-fineprint text-outline">Verified Mileage Guarantee</p>
+                  <div className="space-y-2 min-w-0 text-center sm:text-left">
+                    <a
+                      href="https://google.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center sm:justify-start gap-space-xs font-label-md text-label-md text-on-primary hover:underline"
+                    >
+                      <span className="material-symbols-outlined text-[18px] text-amber-400">star</span>
+                      Read Our Google Reviews
+                      <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                    <a
+                      href="https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="flex items-center justify-center sm:justify-start gap-space-xs font-label-md text-label-md text-on-primary hover:underline"
+                    >
+                      <span className="material-symbols-outlined text-[18px] text-amber-400">directions_car</span>
+                      Read Our AutoTrader Reviews
+                      <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-
-          {/* Review grid with filters */}
-          <section className="w-full py-space-2xl">
-            <div className="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop">
-              <ReviewsGrid />
             </div>
           </section>
 
@@ -174,15 +110,11 @@ export default function CustomerReviewsPage() {
                     <span className="material-symbols-outlined text-[18px]">photo_camera</span>
                     Handover Archive
                   </div>
-                  <h2 className="font-headline-xl text-headline-xl text-on-surface">Recent Delivery Moments</h2>
+                  <h2 className="font-headline-xl text-headline-xl text-on-surface">What Handover Day Looks Like</h2>
                   <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
-                    Every car handed over with clean RAC checks, comprehensive documentation, and
-                    direct personal handover at our Leicester facility.
+                    Every car is handed over with clean RAC checks, comprehensive documentation, and
+                    a direct personal handover at our Leicester facility.
                   </p>
-                </div>
-                <div className="flex items-center gap-space-xs text-outline font-label-md text-label-md">
-                  <span className="material-symbols-outlined text-secondary text-[20px]">thumb_up</span>
-                  100% On-Time Delivery Track Record
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
@@ -250,16 +182,6 @@ export default function CustomerReviewsPage() {
                       Write a Google Review
                       <span className="material-symbols-outlined text-[16px]">open_in_new</span>
                     </a>
-                  </div>
-                  <div className="pt-space-xs space-y-2 text-outline font-body-sm text-body-sm">
-                    <div className="flex items-center gap-space-xs">
-                      <span className="material-symbols-outlined text-[18px] text-emerald-600">check</span>
-                      <span>All reviews verified against genuine invoice &amp; registration data.</span>
-                    </div>
-                    <div className="flex items-center gap-space-xs">
-                      <span className="material-symbols-outlined text-[18px] text-emerald-600">check</span>
-                      <span>Published transparently with no automated filtering.</span>
-                    </div>
                   </div>
                 </div>
                 <div className="lg:col-span-7 bg-surface-container-low p-space-lg rounded-xl">
