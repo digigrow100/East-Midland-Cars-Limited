@@ -94,7 +94,7 @@ export default function WarrantyRacPage() {
                   </p>
                   <div className="pt-space-sm flex flex-wrap items-center gap-space-md">
                     <a href="#tier-comparison" className="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all shadow-md">
-                      <span>Compare Warranty Tiers</span>
+                      <span>View Extended Warranty</span>
                       <span className="material-symbols-outlined text-[18px]">arrow_downward</span>
                     </a>
                     <a href="#claim-process" className="inline-flex items-center gap-space-xs px-6 py-3.5 rounded-lg bg-surface-container-high/15 hover:bg-surface-container-high/25 text-on-primary font-label-md text-label-md transition-all">
