@@ -215,33 +215,21 @@ export default function InitialDisclosureDocumentPage() {
                   <h2 className="font-headline-lg text-headline-lg text-on-surface uppercase">What Services Do We Provide?</h2>
                 </div>
                 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-                  We operate strictly as a <strong className="text-on-surface">credit broker, not a
-                  lender</strong>. We introduce retail and commercial customers seeking vehicular
-                  financing to Finset Limited and their regulated panel of high-quality motor finance
-                  lenders.
+                  East Midland Cars Limited acts as an <strong className="text-on-surface">Introducer
+                  Appointed Representative</strong> of Finset Limited. If you are interested in
+                  financing a vehicle, we can introduce you to Finset Limited. Finset Limited acts as
+                  a credit broker, not a lender, and works with a specific panel of lenders.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md my-space-sm">
-                  <div className="p-space-md rounded-lg bg-surface-container-low space-y-1">
-                    <div className="flex items-center gap-2 text-on-surface font-headline-sm text-headline-sm">
-                      <span className="material-symbols-outlined text-secondary text-[20px]">directions_car</span>
-                      Hire Purchase (HP)
-                    </div>
-                    <p className="font-body-sm text-body-sm text-on-surface-variant">
-                      Direct route to ownership. Equal monthly repayments spread over terms from 12 to
-                      60 months with an optional nominal option-to-purchase fee at conclusion.
-                    </p>
-                  </div>
-                  <div className="p-space-md rounded-lg bg-surface-container-low space-y-1">
-                    <div className="flex items-center gap-2 text-on-surface font-headline-sm text-headline-sm">
-                      <span className="material-symbols-outlined text-secondary text-[20px]">calendar_month</span>
-                      Personal Contract Purchase (PCP)
-                    </div>
-                    <p className="font-body-sm text-body-sm text-on-surface-variant">
-                      Lower monthly payments deferring a guaranteed minimum future value (GMFV /
-                      balloon) to the term end, offering options to return, part-exchange, or purchase.
-                    </p>
-                  </div>
-                </div>
+                <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Finset Limited may be able to provide information about finance products including
+                  Hire Purchase (HP), Personal Contract Purchase (PCP), Conditional Sale, Lease
+                  Purchase and Personal Loans. Availability is subject to status, lender criteria and
+                  the particular vehicle.
+                </p>
+                <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Finset Limited only considers finance products available from lenders on its panel.
+                  Other finance products and providers may be available elsewhere in the market.
+                </p>
                 <div className="p-space-md rounded-lg bg-surface-container-high/60 space-y-2">
                   <div className="flex items-center gap-2 text-on-surface font-label-md text-label-md uppercase">
                     <span className="material-symbols-outlined text-secondary text-[18px]">info</span>
