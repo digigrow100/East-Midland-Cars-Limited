@@ -21,14 +21,14 @@ const PILLARS = [
   {
     icon: "verified_user",
     label: "Authorised Status",
-    title: "FCA Regulated",
-    body: "Appointed Representative of Finset Limited (FRN: 987805). East Midland Cars holds FRN: 1058774.",
+    title: "Regulatory Status",
+    body: "East Midland Cars Limited is an Introducer Appointed Representative of Finset Limited. Finset Limited is authorised and regulated by the Financial Conduct Authority under FRN 987805. East Midland Cars Limited's FCA Reference Number is 1058774.",
   },
   {
     icon: "account_balance_wallet",
     label: "Credit Intermediary",
     title: "Broker, Not Lender",
-    body: "We partner with Finset Limited's extensive panel of tier-one & sub-prime lenders to deliver bespoke HP & PCP terms.",
+    body: "We can introduce customers to Finset Limited for the purpose of obtaining vehicle finance. Finset Limited acts as a credit broker, not a lender, and works with a specific panel of lenders.",
   },
   {
     icon: "money_off",
@@ -81,7 +81,7 @@ export default function InitialDisclosureDocumentPage() {
                 <span className="text-outline-variant">/</span>
                 <div className="flex items-center gap-1.5">
                   <span className="material-symbols-outlined text-secondary text-[16px]">rule</span>
-                  <span>Version: <strong className="text-on-surface font-semibold">2.4 (Consumer Duty Compliant)</strong></span>
+                  <span>Version: <strong className="text-on-surface font-semibold">3.0</strong></span>
                 </div>
                 <span className="text-outline-variant">/</span>
                 <div className="flex items-center gap-1.5">
