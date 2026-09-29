@@ -265,11 +265,12 @@ export default function InitialDisclosureDocumentPage() {
                   <div className="flex gap-space-sm items-start">
                     <span className="material-symbols-outlined text-secondary shrink-0 mt-0.5">check_circle</span>
                     <p className="font-body-md text-body-md text-on-surface-variant">
-                      <strong className="text-on-surface">Broker Commission:</strong> As a credit broker,
-                      we may receive a commission or referral fee from Finset Limited or the chosen
-                      lender should you proceed to enter into a credit agreement. This remuneration
-                      model is typically structured as a fixed sum per transaction or a fixed percentage
-                      relative to the capital amount borrowed.
+                      <strong className="text-on-surface">Broker Commission:</strong> We receive
+                      commission for introducing customers to Finset Limited if they proceed with a
+                      finance acceptance. This commission may be a fixed payment or fixed percentage
+                      of the amount financed and may vary by partner. Full information will be
+                      provided before completing the finance agreement and further information can be
+                      requested at any time.
                     </p>
                   </div>
                   <div className="flex gap-space-sm items-start">
@@ -286,12 +287,11 @@ export default function InitialDisclosureDocumentPage() {
                 <div className="bg-surface-container-low p-space-md rounded-lg flex items-start gap-space-md">
                   <span className="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-1">request_quote</span>
                   <div className="space-y-1">
-                    <p className="font-headline-sm text-headline-sm text-on-surface">Statutory Right to Request Exact Commission</p>
+                    <p className="font-headline-sm text-headline-sm text-on-surface">Commission Disclosure</p>
                     <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                      Under FCA regulations, you possess the definitive right to request disclosure of
-                      the monetary amount or percentage of commission we will receive prior to
-                      concluding your credit contract. You may ask your sales representative at any
-                      point or submit a request directly in writing to{" "}
+                      Further information about the commission we receive can be requested at any
+                      time, before you conclude your credit contract. You may ask your sales
+                      representative directly or submit a request in writing to{" "}
                       <a className="text-secondary underline" href="mailto:sales@eastmidlandcars.co.uk">
                         sales@eastmidlandcars.co.uk
                       </a>
