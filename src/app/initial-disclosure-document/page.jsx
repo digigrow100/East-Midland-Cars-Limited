@@ -265,11 +265,12 @@ export default function InitialDisclosureDocumentPage() {
                   <div className="flex gap-space-sm items-start">
                     <span className="material-symbols-outlined text-secondary shrink-0 mt-0.5">check_circle</span>
                     <p className="font-body-md text-body-md text-on-surface-variant">
-                      <strong className="text-on-surface">Broker Commission:</strong> As a credit broker,
-                      we may receive a commission or referral fee from Finset Limited or the chosen
-                      lender should you proceed to enter into a credit agreement. This remuneration
-                      model is typically structured as a fixed sum per transaction or a fixed percentage
-                      relative to the capital amount borrowed.
+                      <strong className="text-on-surface">Broker Commission:</strong> We receive
+                      commission for introducing customers to Finset Limited if they proceed with a
+                      finance acceptance. This commission may be a fixed payment or fixed percentage
+                      of the amount financed and may vary by partner. Full information will be
+                      provided before completing the finance agreement and further information can be
+                      requested at any time.
                     </p>
                   </div>
                   <div className="flex gap-space-sm items-start">
@@ -286,12 +287,11 @@ export default function InitialDisclosureDocumentPage() {
                 <div className="bg-surface-container-low p-space-md rounded-lg flex items-start gap-space-md">
                   <span className="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-1">request_quote</span>
                   <div className="space-y-1">
-                    <p className="font-headline-sm text-headline-sm text-on-surface">Statutory Right to Request Exact Commission</p>
+                    <p className="font-headline-sm text-headline-sm text-on-surface">Commission Disclosure</p>
                     <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                      Under FCA regulations, you possess the definitive right to request disclosure of
-                      the monetary amount or percentage of commission we will receive prior to
-                      concluding your credit contract. You may ask your sales representative at any
-                      point or submit a request directly in writing to{" "}
+                      Further information about the commission we receive can be requested at any
+                      time, before you conclude your credit contract. You may ask your sales
+                      representative directly or submit a request in writing to{" "}
                       <a className="text-secondary underline" href="mailto:sales@eastmidlandcars.co.uk">
                         sales@eastmidlandcars.co.uk
                       </a>
@@ -310,30 +310,14 @@ export default function InitialDisclosureDocumentPage() {
                   All credit applications are subject to status, terms, and individual creditworthiness
                   evaluations.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-                  <div className="bg-surface-container-low p-space-md rounded-lg space-y-2">
-                    <div className="flex items-center gap-2 text-on-surface font-label-md text-label-md uppercase">
-                      <span className="material-symbols-outlined text-secondary text-[18px]">travel_explore</span>
-                      Initial Eligibility: Soft Search
-                    </div>
-                    <p className="font-body-sm text-body-sm text-on-surface-variant">
-                      When using our finance qualification tools or initial pre-approval check, a
-                      &lsquo;soft search&rsquo; is performed. This check is visible only to you on your
-                      credit file and has zero influence on your credit scoring.
-                    </p>
-                  </div>
-                  <div className="bg-surface-container-low p-space-md rounded-lg space-y-2">
-                    <div className="flex items-center gap-2 text-on-surface font-label-md text-label-md uppercase">
-                      <span className="material-symbols-outlined text-secondary text-[18px]">fingerprint</span>
-                      Formal Submission: Hard Search
-                    </div>
-                    <p className="font-body-sm text-body-sm text-on-surface-variant">
-                      Upon submitting a formal proposal to the selected finance lender, a comprehensive
-                      credit check (hard search) will be logged on your credit profile, alongside
-                      identity, residency, and affordability verification.
-                    </p>
-                  </div>
-                </div>
+                <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Following an introduction by East Midland Cars Limited, Finset Limited and/or its
+                  finance partners may carry out eligibility, identity, affordability and
+                  creditworthiness checks as part of the finance application process. These checks
+                  may include soft and/or hard searches of your credit file. Finset Limited will
+                  provide further information about the searches applicable to your application.
+                  East Midland Cars Limited does not make lending or credit-acceptance decisions.
+                </p>
                 <div className="bg-surface-container-high/40 p-space-md rounded-lg flex items-start gap-space-sm text-on-surface">
                   <span className="material-symbols-outlined text-error text-[24px] shrink-0 mt-0.5">warning</span>
                   <div className="space-y-1">
@@ -377,10 +361,10 @@ export default function InitialDisclosureDocumentPage() {
                     <div>
                       <h3 className="font-headline-sm text-headline-sm text-on-surface text-base mb-1">Restricted Data Sharing</h3>
                       <p className="font-body-sm text-body-sm text-on-surface-variant">
-                        We only disclose personal data to Finset Limited and their regulated panel of
-                        lenders for the express purpose of evaluating eligibility and underwriting
-                        finance contracts. We will never monetize or sell personal data to
-                        non-affiliated marketing entities.
+                        Where you ask us to introduce you for vehicle finance, relevant personal
+                        information may be passed to Finset Limited. Finset Limited may subsequently
+                        share relevant information with members of its lender panel and other parties
+                        where necessary in accordance with its Privacy Policy.
                       </p>
                     </div>
                   </div>
