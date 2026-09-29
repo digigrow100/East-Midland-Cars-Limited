@@ -111,10 +111,7 @@ export default function ReviewForm() {
         />
       </div>
 
-      <div className="flex items-center justify-between pt-space-xs">
-        <p className="font-legal-fineprint text-legal-fineprint text-outline">
-          By submitting, you agree to our verified customer publication guidelines.
-        </p>
+      <div className="flex items-center justify-end pt-space-xs">
         <button
           type="submit"
           className="inline-flex items-center gap-space-xs px-6 py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container hover:text-on-secondary transition-all shadow-md"
@@ -127,7 +124,7 @@ export default function ReviewForm() {
       {submitted && (
         <div className="p-space-md bg-surface-container rounded-lg font-body-sm text-body-sm text-emerald-800 flex items-center gap-space-xs">
           <span className="material-symbols-outlined text-emerald-600">check_circle</span>
-          Thank you! Your testimonial has been received and logged for audit verification.
+          Thank you for your feedback.
         </div>
       )}
     </form>

@@ -121,27 +121,6 @@ const PILLARS = [
   },
 ];
 
-const REVIEWS = [
-  {
-    title: '"Traveled from Nottingham for an Audi RS3"',
-    body: "Absolutely exceptional service, no pushy tactics, and the car was immaculate. The staff explained the service records in complete detail and arranged an extended warranty smoothly. Highly recommend!",
-    author: "Arnold M.",
-    meta: "Verified Buyer • Audi RS3 Sportback",
-  },
-  {
-    title: '"Finance Arranged Within an Hour"',
-    body: "Helped me arrange finance through Finset within an hour. Professional, polite, and reassuring from start to finish. Everything was transparent with no sudden fees. First-class customer service.",
-    author: "Charlotte C.",
-    meta: "Verified Buyer • Mercedes-AMG C63",
-  },
-  {
-    title: '"Family SUV - Outstanding Trust"',
-    body: "Purchased a reliable family SUV here. Trustworthy dealer with clear history check, 3-month warranty, and zero sales pressure. The team went above and beyond to make us feel confident.",
-    author: "Peter R.",
-    meta: "Verified Buyer • Nissan Qashqai",
-  },
-];
-
 export default function Home() {
   return (
     <>
@@ -175,9 +154,9 @@ export default function Home() {
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
                     {[
                       {
-                        icon: "star",
-                        label: "4.8 / 5",
-                        sub: "AutoTrader & Google",
+                        icon: "reviews",
+                        label: "AutoTrader",
+                        sub: "Read Our Reviews",
                         href: "https://www.autotrader.co.uk/dealers/leicestershire/leicester/east-midland-cars-limited-10034803",
                       },
                       { icon: "verified_user", label: "HPI Clear", sub: "100% History Verified" },
@@ -642,46 +621,28 @@ export default function Home() {
           {/* Testimonials teaser */}
           <section className="w-full bg-surface-container-low py-space-2xl">
             <div className="max-w-[1320px] mx-auto px-margin-mobile lg:px-margin-desktop">
-              <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="material-symbols-outlined text-secondary text-[20px]">stars</span>
                     <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">
-                      Real Customer Feedback
+                      Customer Feedback
                     </span>
                   </div>
                   <h2 className="font-headline-xl text-headline-xl font-bold uppercase tracking-tight text-on-surface">
-                    Rated 4.8 / 5 Across Verified Platforms
+                    Read Our Customer Reviews
                   </h2>
+                  <p className="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+                    See genuine customer feedback directly on our AutoTrader dealer profile and
+                    Google Business listing.
+                  </p>
                 </div>
                 <Link
                   href="/customer-reviews"
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors shadow-sm shrink-0"
                 >
-                  Read All Verified Reviews
+                  View Reviews
                 </Link>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-                {REVIEWS.map((review) => (
-                  <div key={review.author} className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
-                    <div className="space-y-space-sm">
-                      <div className="flex text-amber-500">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                          <span key={i} className="material-symbols-outlined text-[20px]">star</span>
-                        ))}
-                      </div>
-                      <h4 className="font-headline-sm text-headline-sm font-bold text-on-surface">{review.title}</h4>
-                      <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{review.body}</p>
-                    </div>
-                    <div className="pt-space-md flex items-center justify-between">
-                      <div>
-                        <p className="font-label-md text-label-md font-bold text-on-surface">{review.author}</p>
-                        <p className="font-legal-fineprint text-legal-fineprint text-on-surface-variant">{review.meta}</p>
-                      </div>
-                      <span className="material-symbols-outlined text-surface-tint/40 text-[28px]">format_quote</span>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </section>
