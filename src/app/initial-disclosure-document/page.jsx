@@ -76,7 +76,7 @@ export default function InitialDisclosureDocumentPage() {
               <div className="flex flex-wrap items-center gap-space-md">
                 <div className="flex items-center gap-1.5">
                   <span className="material-symbols-outlined text-secondary text-[16px]">calendar_today</span>
-                  <span>Last Updated: <strong className="text-on-surface font-semibold">October 2024</strong></span>
+                  <span>Last Updated: <strong className="text-on-surface font-semibold">September 2026</strong></span>
                 </div>
                 <span className="text-outline-variant">/</span>
                 <div className="flex items-center gap-1.5">
