@@ -40,7 +40,7 @@ const PILLARS = [
     icon: "shield",
     label: "Data Integrity",
     title: "ICO & UK GDPR",
-    body: "Certified data controller (Registration ZC152902). Transmissions are encrypted using enterprise 256-bit SSL protocols.",
+    body: "East Midland Cars Limited is registered with the Information Commissioner's Office (ICO) under registration number ZC152902. We process personal data in accordance with applicable UK data protection legislation and our Privacy Policy. As our regulatory principal, Finset Limited is responsible for overseeing the activities we carry out within the scope of our appointment as an Introducer Appointed Representative. Our FCA Reference Number (IAR) is 1058774.",
   },
 ];
 
