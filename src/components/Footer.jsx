@@ -239,7 +239,7 @@ export default function Footer() {
               <Link className="hover:text-on-primary transition-colors" href="/initial-disclosure-document">
                 Initial Disclosure Document
               </Link>
-              <Link className="hover:text-on-primary transition-colors" href="/privacy-policy">
+              <Link className="hover:text-on-primary transition-colors" href="/East_Midland_Cars_Privacy_Policy">
                 Privacy Policy
               </Link>
               <a
