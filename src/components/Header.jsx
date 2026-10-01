@@ -16,6 +16,7 @@ const NAV_LINKS = [
   { href: "/warranty-rac", label: "Warranty & RAC" },
   { href: "/customer-reviews", label: "Customer Reviews" },
   { href: "/contact-us-visit", label: "Contact Us" },
+  { href: "/East_Midland_Cars_Privacy_Policy", label: "Privacy Policy" },
 ];
 
 export default function Header() {
