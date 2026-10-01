@@ -239,6 +239,9 @@ export default function Footer() {
               <Link className="hover:text-on-primary transition-colors" href="/initial-disclosure-document">
                 Initial Disclosure Document
               </Link>
+              <Link className="hover:text-on-primary transition-colors" href="/privacy-policy">
+                Privacy Policy
+              </Link>
               <a
                 className="hover:text-on-primary transition-colors"
                 href="https://www.finset.co.uk/complaints"
