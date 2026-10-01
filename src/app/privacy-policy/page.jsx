@@ -154,13 +154,13 @@ export default function PrivacyPolicyPage() {
 
           {/* Main content + sidebar */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start mb-space-2xl">
-            <div className="lg:col-span-4 space-y-space-md lg:sticky lg:top-32">
+            <div className="lg:col-span-4 space-y-space-md lg:sticky lg:top-32 lg:max-h-[calc(100vh-9rem)] lg:overflow-y-auto">
               <div className="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
                 <div className="flex items-center justify-between pb-space-sm mb-space-sm">
                   <span className="font-headline-sm text-headline-sm text-on-surface uppercase">Document Index</span>
                   <span className="material-symbols-outlined text-on-surface-variant text-[20px]">list_alt</span>
                 </div>
-                <nav className="flex flex-col space-y-1 font-label-md text-label-md max-h-[520px] overflow-y-auto">
+                <nav className="flex flex-col space-y-1 font-label-md text-label-md">
                   {NAV_ITEMS.map((item, i) => (
                     <a
                       key={item.href}
